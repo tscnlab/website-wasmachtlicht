@@ -1,6 +1,6 @@
 # Was macht Licht? – Das Lichtcafé
 
-A responsive German project landing page and English scientific-interest page, authored as reproducible Quarto documents and rendered to static HTML. No framework runtime, npm dependencies, remote fonts, tracking, or registration backend.
+A responsive German project landing page and English scientific-interest page, authored as reproducible Quarto documents and rendered to static HTML. The visual design follows the supplied Max Planck corporate design manual. No framework runtime, npm dependencies, remote fonts, tracking, or registration backend.
 
 ## Build and preview
 
@@ -39,9 +39,26 @@ Public institutional links and scientific contact were checked against:
 
 The institute's provider information and privacy policy are linked explicitly as institutional information, not copied or presented as the hosting provider's legal terms. For a future public recruitment launch, replace provisional study information and add the approved project-specific provider/privacy information alongside the registration form.
 
-## Image
+## Corporate design and supplied logos
 
-`assets/morning-light-cafe.webp` is an original AI-generated editorial image of winter morning light in a café, generated for this project and compressed locally from the original. It is identified as a symbolic image, not a photograph of the planned study site. No institutional logos or third-party photographs were copied.
+The supplied `InnereUhr_CorporateStyleGuide.pdf` is the Max Planck Society print manual, version 1.2 (19 July 2022). Following the user’s preference for a selective interpretation, the web layout borrows the house greens (`#006c66`, `#005555`), a restrained light-green accent (`#c6d325`), generous clear space and locally hosted Roboto. Sentence-case headings, lighter weights, softer corners and comfortable screen typography make the public-facing project feel more approachable. Print-only page dimensions and print-specific logo positions are not transferred literally to the responsive website.
+
+The MPI logo is placed in the header. MPF, MPS/MPG and MPI logos are also presented together on white, with clear space, preserved proportions and links to the organisations. German and English MPF/MPI artwork is selected by page language. The supplied MPS/MPG artwork has German lettering on both pages; no translated logo was invented. The institutional row does not add an unconfirmed funding-award claim.
+
+- `assets/logos/mpi-de.png`, `mpi-en.png`: rasterised from the supplied wide green MPI EPS files at 288 dpi, with transparency and Ghostscript's print-to-screen colour conversion.
+- `assets/logos/mpf-de.png`, `mpf-en.png`: rasterised from the corresponding supplied MPF EPS originals using the same process.
+- `assets/logos/mps.png`: the supplied `MPG_Logo_RGB_mpg-green.png`, copied unchanged.
+- `assets/fonts/Roboto-Variable.ttf`: locally hosted Roboto; its SIL Open Font License is included in `assets/fonts/OFL-Roboto.txt`.
+
+The logos have not been redrawn, rearranged or modified with image generation. The supplied print artwork is retained rather than inventing a mirrored web variant.
+
+## Photograph
+
+`assets/roadshow-verena-mueller.webp` is a real photograph of the existing mobile research trailer, credited to **Verena Müller**. Original: `32 Fotos Verena/Fuer Nextcloud/Nachtmensch_oder_Frühaufsteher_40.jpg` in the user's roadshow project. The source set also contains the folders `verenamuellerfotografie_Max_Planck_TUE` and `20250426 Verena Müller Roadshow Photos`, which support the attribution. The original is 7087 × 4727 pixels; the website copy is resized to 2400 × 1601 and encoded as WebP. No generated elements, retouching or synthetic alterations have been applied. The responsive layout may crop the display on larger screens.
+
+The caption identifies it as the existing roadshow trailer before the planned Lichtcafé conversion. The previously generated café image has been removed from the current sources and exported website.
+
+`scripts/prepare-brand-assets.py` records the reproducible conversion process. It requires the original roadshow project, Ghostscript and Pillow. Normal `quarto render` builds use the checked-in assets and require none of those external originals.
 
 ## Accessibility and maintenance
 

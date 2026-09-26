@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="$description$">
-  <meta name="theme-color" content="#102d36">
+  <meta name="theme-color" content="#005555">
   <title>$title$</title>
   <link rel="icon" href="$site-root$/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="$site-root$/assets/fonts/Roboto-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="$site-root$/assets/styles.css">
   <script src="$site-root$/assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">$if(english)$Skip to content$else$Zum Inhalt$endif$</a>
   <header class="site-header">
-    <a class="brand" href="$site-root$/" aria-label="Was macht Licht? – Startseite"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8"/><path d="M20 1v7m0 24v7M1 20h7m24 0h7M6.6 6.6l5 5m16.8 16.8 5 5M6.6 33.4l5-5m16.8-16.8 5-5"/></svg><span>was macht licht<span class="brand-question">?</span></span></a>
+    <a class="brand institute-brand" href="$site-root$/" aria-label="$if(english)$Was macht Licht? – Home$else$Was macht Licht? – Startseite$endif$"><img src="$site-root$/assets/logos/mpi-$if(english)$en$else$de$endif$.png" width="$if(english)$1491$else$1494$endif$" height="253" alt="$if(english)$Max Planck Institute for Biological Cybernetics$else$Max-Planck-Institut für biologische Kybernetik$endif$"></a>
     <nav class="desktop-nav" aria-label="$if(english)$Main navigation$else$Hauptnavigation$endif$">
     $if(english)$
       <a href="#research">Research</a><a href="#design">Study design</a><a href="#team">Team</a>
@@ -24,6 +25,11 @@
     <div class="header-actions"><div class="language-switch" aria-label="$if(english)$Language$else$Sprache$endif$"><a href="$site-root$/" lang="de" $if(english)$$else$aria-current="page"$endif$>DE</a><span>/</span><a href="$site-root$/en/" lang="en" $if(english)$aria-current="page"$endif$>EN</a></div><a class="button button-small" href="$if(english)$#contact$else$#mitmachen$endif$">$if(english)$Get in touch$else$Mitmachen$endif$ <span aria-hidden="true">↗</span></a></div>
   </header>
   <main id="main">$body$</main>
+  <nav class="institution-logos" aria-label="$if(english)$Max Planck organisations$else$Max-Planck-Organisationen$endif$">
+    <a href="https://www.maxplanckfoundation.org/" class="institution-mpf"><img src="$site-root$/assets/logos/mpf-$if(english)$en$else$de$endif$.png" width="1354" height="406" alt="$if(english)$Max Planck Foundation$else$Max-Planck-Förderstiftung$endif$" loading="lazy"></a>
+    <a href="https://www.mpg.de/" class="institution-mps"><img src="$site-root$/assets/logos/mps.png" width="2099" height="761" alt="$if(english)$Max Planck Society$else$Max-Planck-Gesellschaft$endif$" loading="lazy"></a>
+    <a href="https://www.kyb.tuebingen.mpg.de/" class="institution-mpi"><img src="$site-root$/assets/logos/mpi-$if(english)$en$else$de$endif$.png" width="$if(english)$1491$else$1494$endif$" height="253" alt="$if(english)$Max Planck Institute for Biological Cybernetics$else$Max-Planck-Institut für biologische Kybernetik$endif$" loading="lazy"></a>
+  </nav>
   <footer class="site-footer">
     <div class="footer-top"><a class="footer-brand" href="$site-root$/">was macht licht?</a><p>$if(english)$A study of morning light exposure.$else$Eine Studie zur Wirkung von Licht.$endif$</p><a href="https://www.tscnlab.org/">TSCN Lab <span aria-hidden="true">↗</span></a></div>
     <div class="footer-bottom"><span>© 2026 · Was macht Licht? · $if(english)$Project concept$else$Projekt in Planung$endif$</span><div><a href="$site-root$/#kontakt">$if(english)$Contact & provider information$else$Kontakt & Anbieterhinweise$endif$</a><a href="$site-root$/#datenschutz">$if(english)$Privacy$else$Datenschutz$endif$</a><a href="#main">$if(english)$Back to top$else$Nach oben$endif$ ↑</a></div></div>
