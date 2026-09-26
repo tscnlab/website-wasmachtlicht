@@ -1,0 +1,22 @@
+project:
+  type: default
+  output-dir: dist
+  render:
+    - index.qmd
+    - en/index.qmd
+  resources:
+    - assets/
+  post-render:
+    - python3 scripts/finalize-html.py
+format:
+  html:
+    template: template.html
+    theme: none
+    minimal: true
+    toc: false
+    anchor-sections: false
+    html-math-method: plain
+    lang: de
+    page-layout: full
+execute:
+  freeze: false
