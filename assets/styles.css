@@ -58,23 +58,41 @@ h2{font-size:clamp(36px,3.6vw,54px);line-height:1.14}h3{line-height:1.22}
 @media(max-width:1200px){.institute-brand{width:280px}.site-header{gap:23px}.desktop-nav{gap:17px;font-size:13px}.header-actions{gap:16px}.hero-copy{padding-left:5vw;padding-right:4vw}.hero h1{font-size:65px}.hero-actions{gap:17px}.hero-actions .button{font-size:14px}.institution-logos{gap:20px;padding-left:4%;padding-right:4%}.institution-logos a{padding:16px}}
 @media(max-width:1000px){.desktop-nav{display:none}.site-header{height:95px}.institute-brand{width:330px}.hero{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(42px,6vw,59px)}.hero-description{font-size:17px}.hero-copy{padding:40px 5vw}.institution-logos{grid-template-columns:1fr 1fr}.institution-logos .institution-mpi{grid-column:1/-1;min-height:100px}.institution-logos .institution-mpi img{max-width:390px}.intro-layout h2{font-size:38px}}
 @media(max-width:650px){.site-header{height:91px;padding:12px 6%;gap:18px}.institute-brand{width:min(62vw,320px);padding:10px 0}.header-actions>.button{display:none}.header-actions{gap:0}.language-switch{font-size:13px;gap:8px}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:38px 7% 32px}.hero h1{font-size:clamp(39px,10.8vw,70px);line-height:1.04;margin:23px 0}.hero-description{font-size:17px;max-width:440px}.hero-actions{gap:25px}.hero-note{margin-top:23px}.hero-image>img{height:auto;aspect-ratio:7087/4727;object-fit:contain;max-height:none}.hero-image figcaption{padding:13px 7%;font-size:12px}.intro-layout h2{font-size:38px}.section-heading h2,.light-questions h2{font-size:35px}.question-grid h3{font-size:24px}.steps h3{font-size:26px}.signup-section h2{font-size:42px}.faq-section h2{font-size:38px}.science-hero h1{font-size:42px}.science-context h2{font-size:37px}.institution-logos{grid-template-columns:1fr;gap:10px;padding:26px 7%}.institution-logos a{padding:20px 24px;min-height:100px}.institution-logos .institution-mpi{grid-column:auto}.institution-logos img{max-width:280px}.institution-logos .institution-mps img{max-width:320px}.institution-logos .institution-mpi img{max-width:340px}}
-/* Selective brand use: an approachable project site, not a print template. */
-:root{--paper:#fafbf8;--soft:#f0f3ef;--line:#d7dfd9}
+/* Morning light: bright surfaces and warm illumination, with institutional green accents. */
+:root{--paper:#ffffff;--soft:#fff8df;--line:#e3e5dc;--yellow:#ffda62;--sunlight:linear-gradient(125deg,#fffef8 5%,#fff2b1 60%,#ffd35e 100%)}
 body{letter-spacing:0}
 h1,h2,h3{font-weight:500;letter-spacing:-.025em}
 .site-header,.institution-logos{background:#fff}
 .button{border-radius:5px;font-weight:600;letter-spacing:0}
-.hero h1{font-size:clamp(64px,6.1vw,90px);font-weight:500;text-transform:none;letter-spacing:-.045em;line-height:1.03;margin:26px 0}
-.hero-description{font-weight:400;line-height:1.65}
-.hero-copy{padding-top:52px;padding-bottom:46px}
-.hero h1>span{color:#d3e15b}
-.hero-note{color:#dce9e2}
-.facts-bar{background:#f0f3ef}.section-kicker{letter-spacing:.06em;font-weight:500}
+.button:hover{background:#ffe68f}.button-small:hover{background:#006c66}
+.hero{background:#fffdf4;color:var(--ink)}
+.hero h1{font-size:clamp(64px,6.1vw,90px);font-weight:500;text-transform:none;letter-spacing:-.045em;line-height:1.03;margin:26px 0;color:var(--ink)}
+.hero-description{font-weight:400;line-height:1.65;color:#294a43}
+.hero-copy{padding-top:52px;padding-bottom:46px;background:var(--sunlight)}
+.hero .eyebrow{color:#345b50}
+.hero h1>span{color:#896000;background:linear-gradient(transparent 82%,#ffd04e 82%);padding-right:.025em}
+.hero-note{color:#426052}
+.hero-actions .text-link{color:var(--ink)}
+.hero-actions .button,.science-hero .button{background:var(--ink);color:#fff}
+.hero-actions .button:hover,.science-hero .button:hover{background:#006c66}
+.hero-image figcaption{border-bottom:1px solid var(--line)}
+.facts-bar{background:#fff}.section-kicker{letter-spacing:.06em;font-weight:500}
 .intro-layout h2{letter-spacing:-.035em}.lead{font-weight:400;letter-spacing:-.01em}
 .light-questions h2,.question-grid h3,.steps h3,.contact-strip h2{letter-spacing:-.02em}
-.signup-section{background:#e6edd7;color:#163f3b}.signup-section h2,.signup-section .eyebrow{color:#005555}.signup-content>p:first-child{font-weight:400}.signup-content .small{color:#35524a}
+.step-label{border-bottom-color:#eebd39}
+.process-section{background:linear-gradient(115deg,#fffdf4,#fff5cc)}
+.signup-section{background:linear-gradient(110deg,#fff1ac,#ffdb63);color:#163f3b}.signup-section h2,.signup-section .eyebrow{color:#005555}.signup-content>p:first-child{font-weight:400}.signup-content .small{color:#35524a}
 .signup-section .button-dark{background:#005555;color:#fff}.signup-section .button-dark:hover{background:#006c66}.signup-link:focus-visible{outline-color:#005555}
-.science-hero h1{font-weight:500;letter-spacing:-.025em}.science-hero>p:not(.eyebrow){font-weight:400}.science-context h2{font-weight:500;letter-spacing:-.025em}
+.science-hero{background:var(--sunlight);color:var(--ink)}
+.science-hero h1{font-weight:500;letter-spacing:-.025em;color:var(--ink)}
+.science-hero h1 span{color:#896000}
+.science-hero .eyebrow{color:#345b50}
+.science-hero>p:not(.eyebrow){font-weight:400;color:#294a43}
+.science-context{background:#f0f8f6;color:#294a43}
+.science-context h2{font-weight:500;letter-spacing:-.025em;color:var(--ink)}
+.science-context h2 span{color:#40715f}
+.science-context .lead,.science-context p+p{color:#294a43}
+.science-context .inline-link{color:var(--ink)}
 .footer-brand{font-weight:500;letter-spacing:-.02em}
 @media(max-width:1200px){.hero h1{font-size:clamp(56px,6.1vw,73px)}}
 @media(max-width:1000px){.hero h1{font-size:clamp(47px,6.2vw,62px)}}
