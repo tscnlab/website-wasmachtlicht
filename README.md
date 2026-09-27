@@ -21,6 +21,14 @@ python3 -m http.server 4173 --directory dist
 
 Quarto is used to honour the project's reproducible-notebook requirement. The output works on a plain web server and can also be served with GitHub Pages without a Jekyll build. Re-render after editing sources; avoid editing `dist/` by hand. The small post-render script restores HTML5 doctype after Quarto's custom-template processing.
 
+## GitHub Pages deployment
+
+The production website is **https://wasmachtlicht.de/**, published from `tscnlab/website-wasmachtlicht` by `.github/workflows/pages.yml`. Pushes to `main` build with Quarto 1.6.43, check both language pages, local links, images and JavaScript, and deploy only the rendered `dist/` artifact. Pull requests run the same build and checks without publishing. The workflow can also be run manually on `main`.
+
+GitHub Pages settings must use **GitHub Actions** as the source, with **wasmachtlicht.de** as the custom domain. The domain is managed there; a repository `CNAME` file does not configure an Actions-based Pages deployment. The workflow checks the configured domain before publishing. Enable **Enforce HTTPS** when the certificate is ready. Action versions are pinned to verified commit IDs; build permissions are read-only, and only the deployment job receives Pages/OIDC write access.
+
+The apex DNS must use GitHub Pages' A/AAAA records. If `www` is used, its CNAME should point directly to `tscnlab.github.io`, allowing GitHub to redirect it to the configured apex domain with HTTPS. Domain setup guidance: [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+
 ## Registration placeholder
 
 The primary buttons navigate to the participation section. The registration button currently points to an explicit “Anmeldung bald möglich” notice, as requested. It does not collect or submit personal information. When the approved form is available, set `SIGNUP_URL` in `assets/site.js` and render again. For a JavaScript-free registration link, update the German page's `data-signup` anchor and accompanying note at the same time.

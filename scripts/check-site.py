@@ -30,6 +30,10 @@ class Page(HTMLParser):
 
 
 pages = {p.resolve(): Page(p) for p in ROOT.rglob("*.html")}
+for route, expected_lang in {"index.html": "de", "en/index.html": "en"}.items():
+    path = (ROOT / route).resolve()
+    assert path in pages, f"Missing required page: {route}"
+    assert pages[path].lang == expected_lang, f"Incorrect language for {route}"
 for path, page in pages.items():
     assert path.read_text().lower().startswith("<!doctype html>"), f"Missing doctype: {path}"
     assert page.h1 == 1 and page.lang in ("de", "en"), f"Invalid document structure: {path}"
