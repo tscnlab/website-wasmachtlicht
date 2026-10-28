@@ -1,16 +1,9 @@
-// Add the approved registration form URL here when recruitment opens.
-// Leave empty to keep the visible registration placeholder.
-const SIGNUP_URL = '';
+// Keep the static data-signup links in the Quarto pages/template in sync.
+// Their native href values also work when JavaScript is disabled.
+const SIGNUP_URL = 'https://tuspl22-redcap.srv.mwn.de/redcap/surveys/?s=R839FPF3HNN8MP9L';
 
 if (SIGNUP_URL) {
   document.querySelectorAll('[data-signup]').forEach((link) => {
     link.href = SIGNUP_URL;
-    link.replaceChildren(document.createTextNode('Zur Anmeldung '));
-    const arrow = document.createElement('span');
-    arrow.setAttribute('aria-hidden', 'true');
-    arrow.textContent = '↗';
-    link.append(arrow);
   });
-  const note = document.getElementById('anmeldung-info');
-  if (note) note.textContent = 'Informationen zur Teilnahme und zum Datenschutz findest du im Anmeldeformular.';
 }

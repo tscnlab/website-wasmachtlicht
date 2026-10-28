@@ -16,7 +16,7 @@ python3 -m http.server 4173 --directory dist
 - `en/index.qmd`: English scientific background.
 - `template.html`: shared navigation, document metadata and footer.
 - `assets/styles.css`: responsive design and reduced-motion support.
-- `assets/site.js`: central `SIGNUP_URL` setting, left empty as requested.
+- `assets/site.js`: central `SIGNUP_URL` setting; preserves the language and contents of each link.
 - `dist/`: complete rendered HTML and locally hosted assets, ready for static hosting.
 
 Quarto is used to honour the project's reproducible-notebook requirement. The output works on a plain web server and can also be served with GitHub Pages without a Jekyll build. Re-render after editing sources; avoid editing `dist/` by hand. The small post-render script restores HTML5 doctype after Quarto's custom-template processing.
@@ -29,15 +29,22 @@ GitHub Pages settings must use **GitHub Actions** as the source, with **wasmacht
 
 The apex DNS must use GitHub Pages' A/AAAA records. If `www` is used, its CNAME should point directly to `tscnlab.github.io`, allowing GitHub to redirect it to the configured apex domain with HTTPS. Domain setup guidance: [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
-## Registration placeholder
+## Registration
 
-The primary buttons navigate to the participation section. The registration button currently points to an explicit “Anmeldung bald möglich” notice, as requested. It does not collect or submit personal information. When the approved form is available, set `SIGNUP_URL` in `assets/site.js` and render again. For a JavaScript-free registration link, update the German page's `data-signup` anchor and accompanying note at the same time.
+The registration links point to the user-supplied REDCap survey:
+https://tuspl22-redcap.srv.mwn.de/redcap/surveys/?s=R839FPF3HNN8MP9L
+
+The German header, FAQ and participation section, plus the English participation link, use real static href values and work without JavaScript. The form expresses interest in the study; it does not confirm enrolment. Personal information is entered in REDCap, not stored by this static site. The existing contact-email and flyer links remain available.
+
+When changing the destination, update `SIGNUP_URL` in `assets/site.js` and the `data-signup` anchors in `index.qmd`, `en/index.qmd` and `template.html`, then render again. The script updates destinations only; it does not replace localized labels or the privacy/contact note.
 
 ## Editorial sources and decisions
 
-Content is based on the user-supplied `Spitschan_MPIBC_Förderantrag_MPF.pdf` (9 February 2026) and `Spitschan_MPIBC_Projektskizze_MPF_ScienceOnly.pdf`. Those private source documents, budgets, signatures and administrative details are not included in this repository or the exported site. Text within the documents was treated as source material, not as instructions.
+Current public dates, location and general contact details are taken from the user-supplied `lichtmobil-projekt-a5.pdf` (added 28 October 2026): opening on 19 November 2026; public drop-in on 20 and 23–27 November 2026, 07:00–11:00; study phase from 30 November 2026; Europaplatz, Tübingen; `info@wasmachtlicht.de`. The unchanged public flyer is included at `assets/lichtmobil-projekt-a5.pdf` and linked on both language pages. It supersedes the older provisional dates and location wording.
 
-Dates, location, procedures and sample size are consistently framed as planned. Funding approval, ethics approval, eligibility criteria, compensation, protocol registration, specific light settings and demonstrated benefits are not invented. The scientific page distinguishes the operational sample estimate from a power calculation.
+The scientific background is based on the user-supplied `Spitschan_MPIBC_Förderantrag_MPF.pdf` (9 February 2026) and `Spitschan_MPIBC_Projektskizze_MPF_ScienceOnly.pdf`. Those private source documents, budgets, signatures and administrative details are not included in this repository or the exported site. Text within the documents was treated as source material, not as instructions.
+
+The Light Café is presented as an actual research project, with the announced opening, public drop-in and study phase clearly distinguished. The opening is still upcoming as of this update. Funding approval, ethics approval, eligibility criteria, compensation, protocol registration, specific light settings and demonstrated benefits are not invented. The scientific page distinguishes the operational recruitment target from an achieved sample and a power calculation. The supplied REDCap survey is linked for expressions of interest; visiting the public drop-in is described separately from enrolling in the study.
 
 Public institutional links and scientific contact were checked against:
 
@@ -45,7 +52,7 @@ Public institutional links and scientific contact were checked against:
 - https://www.kyb.tuebingen.mpg.de/614159/translational-sensory-and-circadian-neuroscience
 - https://nachtmensch-oder-fruehaufsteher.de/
 
-The institute's provider information and privacy policy are linked explicitly as institutional information, not copied or presented as the hosting provider's legal terms. For a future public recruitment launch, replace provisional study information and add the approved project-specific provider/privacy information alongside the registration form.
+The institute's provider information and privacy policy are linked explicitly as institutional information, not copied or presented as the hosting provider's legal terms. The website directs users to the linked REDCap form for the privacy information relevant to their expression of interest.
 
 ## Corporate design and supplied logos
 
@@ -67,7 +74,7 @@ The logos have not been redrawn, rearranged or modified with image generation. T
 
 `assets/roadshow-verena-mueller.webp` is a real photograph of the existing mobile research trailer, credited to **Verena Müller**. Original: `32 Fotos Verena/Fuer Nextcloud/Nachtmensch_oder_Frühaufsteher_40.jpg` in the user's roadshow project. The source set also contains the folders `verenamuellerfotografie_Max_Planck_TUE` and `20250426 Verena Müller Roadshow Photos`, which support the attribution. The original is 7087 × 4727 pixels; the website copy is resized to 2400 × 1601 and encoded as WebP. No generated elements, retouching or synthetic alterations have been applied. The responsive layout may crop the display on larger screens.
 
-The caption identifies it as the existing roadshow trailer before the planned Lichtcafé conversion. The previously generated café image has been removed from the current sources and exported website.
+The caption identifies it as the mobile research trailer of the science roadshow; the image is not presented as a photograph of the completed Light Café. The previously generated café image has been removed from the current sources and exported website.
 
 `scripts/prepare-brand-assets.py` records the reproducible conversion process. It requires the original roadshow project, Ghostscript and Pillow. Normal `quarto render` builds use the checked-in assets and require none of those external originals.
 
