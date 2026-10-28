@@ -143,29 +143,33 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 .events-section{background:#fff;}
 .events-section .section-heading{margin-bottom:48px}
 .event-list{border-bottom:1px solid var(--line)}
-.event{display:grid;grid-template-columns:136px minmax(0,1fr) 210px;gap:42px;padding:38px 0 42px;border-top:2px solid var(--yellow);align-items:start}
+.event{--event-accent:var(--coral);--event-accent-hover:var(--coral-hover);--event-line:var(--yellow);--event-tint:#fff2bf;--event-date-bg:var(--sunlight);display:grid;grid-template-columns:136px minmax(0,1fr) 210px;gap:42px;padding:38px 0 42px;border-top:2px solid var(--yellow);align-items:start}
 .event+.event{border-top:1px solid var(--line)}
+.event--online{--event-accent:#4452a8;--event-accent-hover:#303f90;--event-line:#9da8ed;--event-tint:#eef0ff;--event-date-bg:linear-gradient(120deg,#edf0ff 0%,#c6cefa 60%,#a6b7ed 100%)}
+.event-mode{padding:4px 9px;background:var(--event-tint);border-radius:4px;letter-spacing:.04em}
+.event-actions .button{background:var(--event-accent)}
+.event-actions .button:hover{background:var(--event-accent-hover)}
 .event-date{color:var(--ink)}
-.event-date>time{display:block;background:var(--sunlight);padding:18px 15px 16px;border-radius:8px}
+.event-date>time{display:block;background:var(--event-date-bg);padding:18px 15px 16px;border-radius:8px}
 .event-day{display:block;font-size:68px;line-height:1;font-weight:600;letter-spacing:-.065em}
 .event-month{display:block;font-size:16px;font-weight:500;margin-top:9px;line-height:1.4}
 .event-month>span{display:block;font-size:13px;font-weight:400;margin-top:3px}
 .event-date>p{margin-top:15px;font-size:14px;line-height:1.6}
-.event-format{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);font-weight:600;line-height:1.6;margin-bottom:12px}
+.event-format{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--event-accent);font-weight:600;line-height:1.6;margin-bottom:12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
 .event-copy h3{font-size:31px;line-height:1.15;letter-spacing:-.035em;font-weight:550}
 .event-subtitle{font-size:19px;line-height:1.4;margin-top:9px;color:#625b5a}
 .event-description{margin-top:22px;font-size:16px;line-height:1.65;max-width:580px}
 .event-speaker{margin-top:12px;font-size:14px;color:var(--muted)}
-.event-venue{margin-top:23px;padding-left:16px;border-left:3px solid var(--yellow);font-size:15px;line-height:1.65}
+.event-venue{margin-top:23px;padding-left:16px;border-left:3px solid var(--event-line);font-size:15px;line-height:1.65}
 .event-venue strong{font-weight:550}
 .event-venue a{display:inline-block;margin-top:5px;color:var(--coral);text-decoration:underline;text-underline-offset:4px}
 .event-actions{display:flex;flex-wrap:wrap;gap:15px 20px;align-items:center;margin-top:25px}
 .event-actions>p{font-size:12px;color:var(--muted);line-height:1.5}
 .event-flyer{display:block;min-width:0}
 .event-flyer img{width:100%;height:auto;box-shadow:0 5px 22px #2d293012;border:1px solid #eee9e0}
-.event-flyer>span{display:block;margin-top:12px;font-size:13px;color:var(--coral);text-decoration:underline;text-underline-offset:4px}
+.event-flyer>span{display:block;margin-top:12px;font-size:13px;color:var(--event-accent);text-decoration:underline;text-underline-offset:4px}
 .event-filetype{font-size:12px}
-.event-flyer:hover>span{color:var(--coral-hover)}
+.event-flyer:hover>span{color:var(--event-accent-hover)}
 @media(max-width:1100px){.event{grid-template-columns:116px minmax(0,1fr) 170px;gap:28px}.event-day{font-size:60px}.event-month{font-size:14px}.event-copy h3{font-size:28px}}
 @media(max-width:760px){.event{grid-template-columns:100px minmax(0,1fr);gap:24px}.event-flyer{grid-column:2;display:flex;align-items:center;gap:20px}.event-flyer img{width:94px;flex:none}.event-flyer>span{margin-top:0}.event-date>time{padding:14px 12px}.event-day{font-size:52px}.event-month{font-size:13px}.event-date>p{font-size:12px}}
 @media(max-width:540px){.events-section .section-heading{margin-bottom:30px}.event{grid-template-columns:1fr;gap:26px;padding:28px 0 32px}.event-date{display:flex;align-items:center;gap:22px}.event-date>time{display:flex;align-items:center;gap:15px;padding:12px 17px}.event-month{margin-top:0;font-size:14px}.event-day{font-size:45px}.event-date>p{margin:0;font-size:13px}.event-copy h3{font-size:29px}.event-subtitle{font-size:18px}.event-description{margin-top:18px}.event-flyer{grid-column:1}.event-flyer img{width:80px}.event-actions{gap:15px}.event-actions .button{font-size:14px}}

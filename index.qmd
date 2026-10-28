@@ -18,10 +18,10 @@ site-root: .
   <p class="section-kicker">03 / VERANSTALTUNGEN</p>
   <div class="section-heading"><h2 id="events-title">Vorträge &amp;<br>Veranstaltungen</h2><p>Im Werkstadthaus und online: Manuel Spitschan spricht über Licht im Alltag und beantwortet Fragen.</p></div>
   <div class="event-list">
-    <article class="event" aria-labelledby="werkstadthaus-title">
+    <article class="event event--in-person" aria-labelledby="werkstadthaus-title">
       <div class="event-date"><time datetime="2026-11-24"><span class="event-day">24</span><span class="event-month">November <span>2026</span></span></time><p>Dienstag<br><time datetime="2026-11-24T18:00:00+01:00">18:00</time>–<time datetime="2026-11-24T19:00:00+01:00">19:00 Uhr</time></p></div>
       <div class="event-copy">
-        <p class="event-format">Vortrag &amp; Gespräch</p>
+        <p class="event-format"><span class="event-mode">Vor Ort</span><span>Vortrag &amp; Gespräch</span></p>
         <h3 id="werkstadthaus-title">Was macht Licht mit uns?</h3>
         <p class="event-subtitle">Licht in der dunklen Jahreszeit</p>
         <p class="event-description">Wie wirkt Licht auf Schlaf und innere Uhr? Forschungshintergründe und praktische Tipps für die dunkle Jahreszeit – mit Zeit für Ihre Fragen.</p>
@@ -31,10 +31,10 @@ site-root: .
       </div>
       <a class="event-flyer" href="./assets/events/werkstadthaus-24-nov-a5.png" type="image/png"><img src="./assets/events/werkstadthaus-24-nov-a5.png" width="881" height="1250" alt="Veranstaltungsflyer: Vortrag im Werkstadthaus am 24. November 2026" loading="lazy"><span>Flyer ansehen <span class="event-filetype">(PNG)</span> <span aria-hidden="true">↗</span></span></a>
     </article>
-    <article class="event" aria-labelledby="lunch-bytes-title">
+    <article class="event event--online" aria-labelledby="lunch-bytes-title">
       <div class="event-date"><time datetime="2026-12-01"><span class="event-day">01</span><span class="event-month">Dezember <span>2026</span></span></time><p>Dienstag<br><time datetime="2026-12-01T13:00:00+01:00">13:00</time>–<time datetime="2026-12-01T14:00:00+01:00">14:00 Uhr</time></p></div>
       <div class="event-copy">
-        <p class="event-format">Lunch Bytes · Mental Health Days</p>
+        <p class="event-format"><span class="event-mode">Online</span><span>Lunch Bytes · Mental Health Days</span></p>
         <h3 id="lunch-bytes-title">Was macht Licht mit uns?</h3>
         <p class="event-subtitle">Licht, Schlaf und innere Uhr im Alltag</p>
         <p class="event-description">Licht im Alltag und in der dunklen Jahreszeit: wissenschaftliche Hintergründe, praktische Tipps und Zeit für Ihre Fragen.</p>

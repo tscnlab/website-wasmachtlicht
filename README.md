@@ -45,6 +45,8 @@ The German `#veranstaltungen` section lists the two talks chronologically. It is
 - **24 November 2026, 18:00–19:00:** Werkstadthaus, Obergeschoss, Aixer Straße 72, 72072 Tübingen. Free admission; registration via `info@wasmachtlicht.de`, as requested by the project lead. The mail link supplies an event-specific subject. The address was checked against the [venue’s contact page](https://www.werkstadthaus.de/service/kontakt-anfahrt); a standard Google Maps search URL provides directions.
 - **1 December 2026, 13:00–14:00:** Lunch Bytes / Mental Health Days, online via Zoom, in German, for students and staff. The registration link is decoded directly from the supplied flyer’s QR code: https://eu02web.zoom-x.de/meeting/register/xG3GhkFjQfytnQmBr2CdsQ. It also matches the flyer’s local `campaign.json` source.
 
+In-person events use yellow/orange date blocks and coral actions; online events use periwinkle date blocks and blue actions. Explicit “Vor Ort” and “Online” labels also identify the format without relying on colour. Original flyer artwork remains unchanged.
+
 Event registration anchors deliberately do not use `data-signup`: that setting is reserved for the separate REDCap study-interest form. Flyer PNGs remain images rather than being labelled as PDFs. No private source documents are included.
 
 ## Editorial sources and decisions
@@ -86,6 +88,12 @@ The logos have not been redrawn, rearranged or modified with image generation. T
 The caption identifies it as the mobile research trailer of the science roadshow; the image is not presented as a photograph of the completed Light Café. The previously generated café image has been removed from the current sources and exported website.
 
 `scripts/prepare-brand-assets.py` records the reproducible conversion process. It requires the original roadshow project, Ghostscript and Pillow. Normal `quarto render` builds use the checked-in assets and require none of those external originals.
+
+## Social preview
+
+Both language pages include static Open Graph and large-image social card metadata, with language-specific titles, descriptions, image alternative text and canonical URLs. The shared brand image is `assets/social-preview.png` (1200 × 630 RGB PNG). It uses the same yellow/orange diagonal hatch as the favicon, the local Roboto typeface and the project title; it contains no dates that can become stale.
+
+Regenerate it with `python3 scripts/prepare-social-preview.py` (Python 3 + Pillow). The PNG is checked in, so ordinary Quarto and GitHub Actions builds need no additional image dependencies. The metadata uses the public absolute image URL, https://wasmachtlicht.de/assets/social-preview.png. Social platforms control their own preview caches.
 
 ## Accessibility and maintenance
 
