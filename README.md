@@ -38,6 +38,15 @@ The German header, FAQ and participation section, plus the English participation
 
 When changing the destination, update `SIGNUP_URL` in `assets/site.js` and the `data-signup` anchors in `index.qmd`, `en/index.qmd` and `template.html`, then render again. The script updates destinations only; it does not replace localized labels or the privacy/contact note.
 
+## Events
+
+The German `#veranstaltungen` section lists the two talks chronologically. It is linked from the main navigation, the hero and the English public-engagement section. Dates, times, audience, speaker and descriptions come from the supplied A5 PNG flyers; the original images are copied unchanged to `assets/events/` and linked at full resolution.
+
+- **24 November 2026, 18:00–19:00:** Werkstadthaus, Obergeschoss, Aixer Straße 72, 72072 Tübingen. Free admission; registration via `info@wasmachtlicht.de`, as requested by the project lead. The mail link supplies an event-specific subject. The address was checked against the [venue’s contact page](https://www.werkstadthaus.de/service/kontakt-anfahrt); a standard Google Maps search URL provides directions.
+- **1 December 2026, 13:00–14:00:** Lunch Bytes / Mental Health Days, online via Zoom, in German, for students and staff. The registration link is decoded directly from the supplied flyer’s QR code: https://eu02web.zoom-x.de/meeting/register/xG3GhkFjQfytnQmBr2CdsQ. It also matches the flyer’s local `campaign.json` source.
+
+Event registration anchors deliberately do not use `data-signup`: that setting is reserved for the separate REDCap study-interest form. Flyer PNGs remain images rather than being labelled as PDFs. No private source documents are included.
+
 ## Editorial sources and decisions
 
 Current public dates, location and general contact details are taken from the user-supplied `lichtmobil-projekt-a5.pdf` (added 28 October 2026): opening on 19 November 2026; public drop-in on 20 and 23–27 November 2026, 07:00–11:00; study phase from 30 November 2026; Europaplatz, Tübingen; `info@wasmachtlicht.de`. The unchanged public flyer is included at `assets/lichtmobil-projekt-a5.pdf` and linked on both language pages. It supersedes the older provisional dates and location wording.
