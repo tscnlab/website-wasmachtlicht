@@ -91,9 +91,9 @@ The caption identifies it as the mobile research trailer of the science roadshow
 
 ## Social preview
 
-Both language pages include static Open Graph and large-image social card metadata, with language-specific titles, descriptions, image alternative text and canonical URLs. The shared brand image is `assets/social-preview.png` (1200 × 630 RGB PNG). It uses the same yellow/orange diagonal hatch as the favicon, the local Roboto typeface and the project title; it contains no dates that can become stale.
+Both language pages include static Open Graph and summary-card metadata, with language-specific titles, descriptions, image alternative text and canonical URLs. The shared image is `assets/social-preview-schraffur-v2.png` (1200 × 1200 RGB PNG). It contains only the yellow/orange diagonal hatch: no lettering can be cut off or become unreadable when a client shows a small square thumbnail. The card title and description are supplied separately through metadata.
 
-Regenerate it with `python3 scripts/prepare-social-preview.py` (Python 3 + Pillow). The PNG is checked in, so ordinary Quarto and GitHub Actions builds need no additional image dependencies. The metadata uses the public absolute image URL, https://wasmachtlicht.de/assets/social-preview.png. Social platforms control their own preview caches.
+Regenerate it with `python3 scripts/prepare-social-preview.py` (Python 3 + Pillow). The PNG is checked in, so ordinary Quarto and GitHub Actions builds need no additional image dependencies. Its public URL is https://wasmachtlicht.de/assets/social-preview-schraffur-v2.png. The new filename avoids reusing the previous image URL; social platforms can still cache already-posted cards. The original wide `social-preview.png` is retained for existing cached references but is no longer advertised by the current pages.
 
 ## Accessibility and maintenance
 
