@@ -142,6 +142,11 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 /* Public events: chronological rows with the original flyer artwork. */
 .events-section{background:#fff;}
 .events-section .section-heading{margin-bottom:48px}
+.programme-feature{margin-bottom:34px}
+.programme-banner{display:block}
+.programme-banner img{display:block;width:100%;height:auto}
+.programme-banner--inline{margin:24px 0}
+.programme-feature .programme-note{margin-bottom:0}
 .programme-note{display:flex;justify-content:space-between;align-items:center;gap:24px 40px;padding:24px 28px;margin-bottom:34px;background:var(--soft);border-left:4px solid var(--yellow)}
 .programme-title{font-size:21px;line-height:1.35;font-weight:550;color:var(--ink);margin-bottom:7px;letter-spacing:-.02em}
 .programme-note p+p{font-size:15px;color:#625b5a;line-height:1.6}

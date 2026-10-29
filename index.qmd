@@ -17,9 +17,12 @@ site-root: .
 <section class="section events-section" id="veranstaltungen" aria-labelledby="events-title">
   <p class="section-kicker">03 / VERANSTALTUNGEN</p>
   <div class="section-heading"><h2 id="events-title">Vorträge &amp;<br>Veranstaltungen</h2><p>Im Werkstadthaus und online: Manuel Spitschan spricht über Licht im Alltag und beantwortet Fragen.</p></div>
-  <aside class="programme-note" aria-label="Mental Health Days 2026">
+  <aside class="programme-feature" aria-label="Mental Health Days 2026">
+    <a class="programme-banner" href="https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/hochschulsport/sgm-betabalance/mental-health-days-angebote/"><img src="./assets/events/mental-health-days-2026-banner.webp" width="1200" height="300" alt="Mental Health Days 2026: Vorträge, Workshops, Praxisangebote und Beratungen. Zum Programm." loading="lazy"></a>
+    <div class="programme-note">
     <div><p class="programme-title">Wir sind bei den Mental Health Days 2026 dabei.</p><p>Unser Beitrag: Lunch Bytes „Was macht Licht mit uns?“ am 1. Dezember.</p></div>
     <a href="https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/hochschulsport/sgm-betabalance/mental-health-days-angebote/">Zum Programm der Universität Tübingen <span aria-hidden="true">↗</span></a>
+    </div>
   </aside>
   <div class="event-list">
     <article class="event event--in-person" aria-labelledby="werkstadthaus-title">

@@ -47,6 +47,8 @@ The German `#veranstaltungen` section lists the two talks chronologically. It is
 
 The participation notice above the German event list and in the English public-engagement section identifies Lunch Bytes on 1 December as our contribution to **Mental Health Days 2026**, as confirmed by the project lead on 29 October 2026. Both notices link to the [University of Tübingen programme](https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/hochschulsport/sgm-betabalance/mental-health-days-angebote/); the public page confirms the series name/year. This is a participation statement, not a claim of sponsorship or formal partnership.
 
+The linked Mental Health Days banner on both language pages is an unchanged local copy of the [official university banner](https://uni-tuebingen.de/fileadmin/_processed_/8/4/csm_MHD_Banner20_1b43049f99.webp), retrieved on 29 October 2026. It is saved as `assets/events/mental-health-days-2026-banner.webp` (1200 × 300 px) and always displayed at its full 4:1 ratio. The artwork says “Mental Health Days 2026” and names talks, workshops, practical activities and advice. Both the image and accompanying text link to the university programme.
+
 In-person events use yellow/orange date blocks and coral actions; online events use periwinkle date blocks and blue actions. Explicit “Vor Ort” and “Online” labels also identify the format without relying on colour. Original flyer artwork remains unchanged.
 
 Event registration anchors deliberately do not use `data-signup`: that setting is reserved for the separate REDCap study-interest form. Flyer PNGs remain images rather than being labelled as PDFs. No private source documents are included.
