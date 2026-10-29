@@ -142,6 +142,12 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 /* Public events: chronological rows with the original flyer artwork. */
 .events-section{background:#fff;}
 .events-section .section-heading{margin-bottom:48px}
+.programme-note{display:flex;justify-content:space-between;align-items:center;gap:24px 40px;padding:24px 28px;margin-bottom:34px;background:var(--soft);border-left:4px solid var(--yellow)}
+.programme-title{font-size:21px;line-height:1.35;font-weight:550;color:var(--ink);margin-bottom:7px;letter-spacing:-.02em}
+.programme-note p+p{font-size:15px;color:#625b5a;line-height:1.6}
+.programme-note>a{flex:0 0 245px;font-size:14px;line-height:1.6}
+.programme-note>a,.programme-link{color:var(--coral);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:850px){.programme-note{flex-direction:column;align-items:flex-start;gap:14px;padding:21px 23px}.programme-note>a{flex:auto}.programme-title{font-size:20px}}
 .event-list{border-bottom:1px solid var(--line)}
 .event{--event-accent:var(--coral);--event-accent-hover:var(--coral-hover);--event-line:var(--yellow);--event-tint:#fff2bf;--event-date-bg:var(--sunlight);display:grid;grid-template-columns:136px minmax(0,1fr) 210px;gap:42px;padding:38px 0 42px;border-top:2px solid var(--yellow);align-items:start}
 .event+.event{border-top:1px solid var(--line)}
