@@ -65,7 +65,9 @@ Public institutional links and scientific contact were checked against:
 
 - https://www.tscnlab.org/
 - https://www.kyb.tuebingen.mpg.de/614159/translational-sensory-and-circadian-neuroscience
-- https://nachtmensch-oder-fruehaufsteher.de/
+- https://roadshow.tscnlab.org/ (archive of the former science roadshow)
+
+As confirmed by the project lead on 10 November 2026, the former “Nachtmensch oder Frühaufsteher?” science roadshow is no longer active. Both language pages identify it as a past project and link to `https://roadshow.tscnlab.org/` only as an archive. The participation FAQ no longer refers visitors to the Roadshow.
 
 The institute's provider information and privacy policy are linked explicitly as institutional information, not copied or presented as the hosting provider's legal terms. The website directs users to the linked REDCap form for the privacy information relevant to their expression of interest.
 
@@ -89,7 +91,7 @@ The logos have not been redrawn, rearranged or modified with image generation. T
 
 `assets/roadshow-verena-mueller.webp` is a real photograph of the existing mobile research trailer, credited to **Verena Müller**. Original: `32 Fotos Verena/Fuer Nextcloud/Nachtmensch_oder_Frühaufsteher_40.jpg` in the user's roadshow project. The source set also contains the folders `verenamuellerfotografie_Max_Planck_TUE` and `20250426 Verena Müller Roadshow Photos`, which support the attribution. The original is 7087 × 4727 pixels; the website copy is resized to 2400 × 1601 and encoded as WebP. No generated elements, retouching or synthetic alterations have been applied. The responsive layout may crop the display on larger screens.
 
-The caption identifies it as the mobile research trailer of the science roadshow; the image is not presented as a photograph of the completed Light Café. The previously generated café image has been removed from the current sources and exported website.
+The caption identifies it as a historical photograph of the trailer during the former science roadshow; the image is not presented as a photograph of the completed Light Café. The previously generated café image has been removed from the current sources and exported website.
 
 `scripts/prepare-brand-assets.py` records the reproducible conversion process. It requires the original roadshow project, Ghostscript and Pillow. Normal `quarto render` builds use the checked-in assets and require none of those external originals.
 
