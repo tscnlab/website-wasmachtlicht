@@ -11,11 +11,11 @@ site-root: .
   <div class="hero-image hero-carousel" role="region" aria-roledescription="Karussell" aria-label="Einblicke ins Lichtcafé" data-carousel>
     <div class="carousel-slides" id="lichtcafe-fotos">
       <figure class="carousel-slide" role="group" aria-roledescription="Folie" aria-label="1 von 2" data-slide>
-        <img src="./assets/photos/trailer.webp" srcset="./assets/photos/trailer-1200.webp 1200w, ./assets/photos/trailer.webp 2400w" sizes="(max-width: 650px) 86vw, 48vw" width="2400" height="1600" alt="Der gelb-türkise Forschungstrailer des Lichtcafés mit geöffnetem Eingang und Zugangsrampen." fetchpriority="high" draggable="false">
+        <img src="./assets/photos/trailer-058.webp" srcset="./assets/photos/trailer-058-1200.webp 1200w, ./assets/photos/trailer-058.webp 2400w" sizes="(max-width: 650px) 86vw, 48vw" width="2400" height="1600" alt="Das Lichtcafé mit beleuchtetem Eingang und einer Person auf der Zugangsrampe." fetchpriority="high" draggable="false">
         <figcaption>Das Lichtcafé – unser mobiler Forschungstrailer.</figcaption>
       </figure>
       <figure class="carousel-slide" role="group" aria-roledescription="Folie" aria-label="2 von 2" data-slide hidden>
-        <img src="./assets/photos/lichtcafe-erleben.webp" srcset="./assets/photos/lichtcafe-erleben-1200.webp 1200w, ./assets/photos/lichtcafe-erleben.webp 2400w" sizes="(max-width: 650px) 86vw, 48vw" width="2400" height="1600" alt="Vier Personen sitzen im Lichtcafé und blicken auf die großen Lichtflächen." fetchpriority="low" draggable="false">
+        <img src="./assets/photos/lichtcafe-092.webp" srcset="./assets/photos/lichtcafe-092-1200.webp 1200w, ./assets/photos/lichtcafe-092.webp 2400w" sizes="(max-width: 650px) 86vw, 48vw" width="2400" height="1600" alt="Blick durch das Fenster ins Lichtcafé: Vier Personen sitzen mit Büchern und einem Laptop neben einer großen Lichtfläche." fetchpriority="low" draggable="false">
         <figcaption>Licht erleben im Lichtcafé.</figcaption>
       </figure>
     </div>

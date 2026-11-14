@@ -13,8 +13,8 @@
   "study": "Studienphase folgt später.",
   "website_hint": "Alle weiteren Informationen auf unserer Website.",
   "photos": [
-    {"file": "lichtcafe-aussen.jpg", "caption": "Das Lichtcafé von außen"},
-    {"file": "lichtcafe-innen.jpg", "caption": "Einblick ins Lichtcafé"}
+    {"file": "lichtcafe-aussen.jpg", "source": "Max_Planck_Licht_058.jpg", "caption": "Das Lichtcafé von außen"},
+    {"file": "lichtcafe-innen.jpg", "source": "Max_Planck_Licht_092.jpg", "caption": "Einblick ins Lichtcafé"}
   ],
   "photo_credit": "Fotos: Verena Müller",
   "contact": "FRAGEN & KONTAKT",

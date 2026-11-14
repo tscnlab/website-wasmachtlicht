@@ -29,6 +29,6 @@ if (!is.null(status) && status != 0) stop(paste(result, collapse = "\n"))
 ```{r}
 #| label: flyer-preview
 #| out-width: 100%
-#| fig-alt: "Fotoflyer für das Lichtcafé in Tübingen mit einer Außenaufnahme des Trailers und einer Innenaufnahme mit vier Personen vor den Lichtflächen. Morgens Licht tanken. Offenes Angebot ab Freitag, 20. November 2026, Europaplatz, Tübingen. Studienphase folgt später. Alle weiteren Informationen auf wasmachtlicht.de."
+#| fig-alt: "Fotoflyer für das Lichtcafé in Tübingen mit dem beleuchteten Eingang des Trailers und einer Person auf der Rampe sowie einem Blick durch das Fenster auf vier Personen mit Büchern und einem Laptop neben einer Lichtfläche. Morgens Licht tanken. Offenes Angebot ab Freitag, 20. November 2026, Europaplatz, Tübingen. Studienphase folgt später. Alle weiteren Informationen auf wasmachtlicht.de."
 knitr::include_graphics("../output/preview/lichtcafe-a4-druck.png")
 ```

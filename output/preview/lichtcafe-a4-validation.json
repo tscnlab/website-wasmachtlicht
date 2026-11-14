@@ -34,10 +34,12 @@
   "photos": [
     {
       "file": "lichtcafe-aussen.jpg",
+      "source": "Max_Planck_Licht_058.jpg",
       "caption": "Das Lichtcafé von außen"
     },
     {
       "file": "lichtcafe-innen.jpg",
+      "source": "Max_Planck_Licht_092.jpg",
       "caption": "Einblick ins Lichtcafé"
     }
   ],

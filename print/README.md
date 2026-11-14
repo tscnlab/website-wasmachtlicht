@@ -12,7 +12,7 @@ contact panel, two contact cards, QR, bulb motif, and bottom-left institute logo
 The latest user direction explicitly accepts the printer's white margins, so
 there is no fade to white at the perimeter and no designed white border.
 
-The two photographs show the exterior (045) and interior in use (073), from the
+The two photographs show the exterior (058) and interior in use (092), from the
 user-supplied Verena Müller gallery. Both compositions are preserved. They are
 exported to sRGB JPEGs with `prepare_flyer_photos.py`; supplied derivatives and
 provenance are in `assets/photos/`. One photo credit appears at the bottom.

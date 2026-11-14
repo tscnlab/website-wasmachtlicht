@@ -5,29 +5,29 @@
   "retrieved": "2026-11-14",
   "photos": [
     {
-      "source": "Max_Planck_Licht_045.jpg",
-      "output": "trailer",
+      "source": "Max_Planck_Licht_058.jpg",
+      "output": "trailer-058",
       "widths": [
         1200,
         2400
       ],
-      "sha256": "7c2be86ddf6e8dc38c21c685097b5151fc3b6dd3ead9ee698e79a3566dc7eef8",
+      "sha256": "52950802b551ff118890a00b9eb3bf4fb1d3fd34bb0894e938ce982ac588e2b4",
       "original_dimensions": [
-        6916,
-        4611
+        7087,
+        4724
       ],
       "derivatives": [
         {
-          "file": "assets/photos/trailer-1200.webp",
+          "file": "assets/photos/trailer-058-1200.webp",
           "width": 1200,
           "height": 800,
-          "bytes": 202718
+          "bytes": 150854
         },
         {
-          "file": "assets/photos/trailer.webp",
+          "file": "assets/photos/trailer-058.webp",
           "width": 2400,
           "height": 1600,
-          "bytes": 651308
+          "bytes": 474388
         }
       ]
     },
@@ -140,29 +140,29 @@
       ]
     },
     {
-      "source": "Max_Planck_Licht_073.jpg",
-      "output": "lichtcafe-erleben",
+      "source": "Max_Planck_Licht_092.jpg",
+      "output": "lichtcafe-092",
       "widths": [
         1200,
         2400
       ],
-      "sha256": "66824171f9dd87cc05fed0955ab34ff6da44a568ef58bbe1ba19ea68bfd4aeb5",
+      "sha256": "16f807c33cb090f2fe8b78ca96da91c8dbddbcbc5cd0e7937052fcec2d58c053",
       "original_dimensions": [
-        7753,
-        5169
+        7755,
+        5170
       ],
       "derivatives": [
         {
-          "file": "assets/photos/lichtcafe-erleben-1200.webp",
+          "file": "assets/photos/lichtcafe-092-1200.webp",
           "width": 1200,
           "height": 800,
-          "bytes": 99404
+          "bytes": 68094
         },
         {
-          "file": "assets/photos/lichtcafe-erleben.webp",
+          "file": "assets/photos/lichtcafe-092.webp",
           "width": 2400,
           "height": 1600,
-          "bytes": 316772
+          "bytes": 176716
         }
       ]
     }

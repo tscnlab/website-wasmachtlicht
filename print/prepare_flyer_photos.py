@@ -9,8 +9,8 @@ from PIL import Image, ImageCms, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'print/assets/photos'
 DEST.mkdir(parents=True, exist_ok=True)
-items = [('Max_Planck_Licht_045.jpg', 'lichtcafe-aussen.jpg'),
-         ('Max_Planck_Licht_073.jpg', 'lichtcafe-innen.jpg')]
+items = [('Max_Planck_Licht_058.jpg', 'lichtcafe-aussen.jpg'),
+         ('Max_Planck_Licht_092.jpg', 'lichtcafe-innen.jpg')]
 profile = ImageCms.createProfile('sRGB')
 manifest = []
 for original, output in items:
