@@ -185,6 +185,24 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 @media(max-width:760px){.event{grid-template-columns:100px minmax(0,1fr);gap:24px}.event-flyer{grid-column:2;display:flex;align-items:center;gap:20px}.event-flyer img{width:94px;flex:none}.event-flyer>span{margin-top:0}.event-date>time{padding:14px 12px}.event-day{font-size:52px}.event-month{font-size:13px}.event-date>p{font-size:12px}}
 @media(max-width:540px){.events-section .section-heading{margin-bottom:30px}.event{grid-template-columns:1fr;gap:26px;padding:28px 0 32px}.event-date{display:flex;align-items:center;gap:22px}.event-date>time{display:flex;align-items:center;gap:15px;padding:12px 17px}.event-month{margin-top:0;font-size:14px}.event-day{font-size:45px}.event-date>p{margin:0;font-size:13px}.event-copy h3{font-size:29px}.event-subtitle{font-size:18px}.event-description{margin-top:18px}.event-flyer{grid-column:1}.event-flyer img{width:80px}.event-actions{gap:15px}.event-actions .button{font-size:14px}}
 
+/* User-controlled hero carousel; no automatic motion. */
+.hero-carousel .carousel-slides{touch-action:pan-y pinch-zoom}
+.hero-carousel .carousel-slide{margin:0}
+.hero-carousel .carousel-slide[hidden],.hero-carousel .carousel-controls[hidden]{display:none}
+.hero-carousel .carousel-slide img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;user-select:none}
+.hero-carousel .carousel-slide figcaption{min-height:64px;padding:15px 22px 10px}
+.carousel-controls{display:flex;align-items:center;gap:8px;padding:0 14px 12px;color:var(--ink)}
+.carousel-arrow,.carousel-dot{display:inline-flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--coral);cursor:pointer}
+.carousel-arrow{font-size:24px;background:var(--soft)}
+.carousel-arrow:hover,.carousel-dot:hover{background:#ffeec4}
+.carousel-arrow:focus-visible,.carousel-dot:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+.carousel-dots{display:flex;align-items:center;margin-left:auto}
+.carousel-dot{width:36px}
+.carousel-dot span{width:8px;height:8px;border-radius:50%;background:#c5bdb6}
+.carousel-dot[aria-current="true"] span{width:22px;border-radius:5px;background:var(--coral)}
+.carousel-status{min-width:70px;margin:0 auto 0 4px;font-size:12px;color:#625b5a;text-align:center;white-space:nowrap}
+.photo-credit{margin-top:22px;font-size:12px;color:#d9cfc6}
+@media(max-width:650px){.hero-carousel .carousel-slide figcaption{min-height:64px;padding:13px 17px 8px}.carousel-controls{padding:0 10px 10px;gap:3px}.carousel-dot{width:28px}.carousel-status{font-size:11px;min-width:66px;margin-left:0}}
 /* Team portraits and photographs share the layout in both languages. */
 .team-section .team-people,.team-section .team-group-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
 .team-section .team-people{margin-top:46px}
@@ -194,12 +212,10 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 .team-section .team-photo-link:focus-visible{outline:3px solid var(--coral);outline-offset:5px}
 .team-section .team-photo-link:hover{box-shadow:0 5px 22px #2d293012}
 .team-section .team-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-.team-section .team-portrait figcaption{margin-top:9px;font-size:12px;line-height:1.5;color:var(--muted)}
 .team-section .team-members{margin-top:36px;font-size:19px;line-height:1.65;max-width:900px;color:#625b5a}
 .team-section .team-members strong{font-weight:550;color:var(--ink)}
 .team-section .team-group-gallery{margin-top:46px;padding-top:36px;border-top:1px solid var(--line)}
 .team-section .team-scene{margin:0}
 .team-section .team-scene img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
 .team-section .team-scene figcaption{margin-top:13px;font-size:15px;line-height:1.6;color:#625b5a}
-.team-section .team-scene figcaption span{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
 @media(max-width:650px){.team-section .team-people,.team-section .team-group-gallery{grid-template-columns:1fr;gap:32px}.team-section .team-people{margin-top:34px}.team-section .team-group-gallery{margin-top:34px;padding-top:28px}.team-section .team-members{font-size:17px}}
