@@ -138,6 +138,33 @@
           "bytes": 344370
         }
       ]
+    },
+    {
+      "source": "Max_Planck_Licht_073.jpg",
+      "output": "lichtcafe-erleben",
+      "widths": [
+        1200,
+        2400
+      ],
+      "sha256": "66824171f9dd87cc05fed0955ab34ff6da44a568ef58bbe1ba19ea68bfd4aeb5",
+      "original_dimensions": [
+        7753,
+        5169
+      ],
+      "derivatives": [
+        {
+          "file": "assets/photos/lichtcafe-erleben-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 99404
+        },
+        {
+          "file": "assets/photos/lichtcafe-erleben.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 316772
+        }
+      ]
     }
   ]
 }

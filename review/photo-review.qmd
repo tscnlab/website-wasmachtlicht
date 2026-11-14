@@ -82,3 +82,21 @@ Fotos: **Verena Müller** · [tscnlab.org](https://www.tscnlab.org/)
 **E** Das Team im Lichtcafé
 
 :::
+
+{{< pagebreak >}}
+
+::: {.review-page .experience-page}
+
+# Licht erleben im Lichtcafé
+
+![](images/lichtcafe-erleben.jpg){width=100% fig-alt="Vier Personen sitzen im Lichtcafé vor den Lichtflächen."}
+
+**F** Licht erleben im Lichtcafé
+
+Die Aufnahme ergänzt den Trailer im Bildkarussell der Projektwebsite.
+
+::: {.photo-source}
+Fotografie: **Verena Müller**. Quelle: [Galerie „Max Planck Lichtmobil“](https://www.picdrop.com/verenamuellerfotografie/7e4Z7c46Ma).
+:::
+
+:::

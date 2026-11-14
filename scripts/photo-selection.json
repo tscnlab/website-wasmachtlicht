@@ -8,6 +8,7 @@
     {"source": "Max_Planck_Licht_011.jpg", "output": "portrait-011", "widths": [600, 1200]},
     {"source": "Max_Planck_Licht_019.jpg", "output": "portrait-019", "widths": [600, 1200]},
     {"source": "Max_Planck_Licht_025.jpg", "output": "team-trailer", "widths": [1200, 2400]},
-    {"source": "Max_Planck_Licht_007.jpg", "output": "team-lichtcafe", "widths": [1200, 2400]}
+    {"source": "Max_Planck_Licht_007.jpg", "output": "team-lichtcafe", "widths": [1200, 2400]},
+    {"source": "Max_Planck_Licht_073.jpg", "output": "lichtcafe-erleben", "widths": [1200, 2400]}
   ]
 }
