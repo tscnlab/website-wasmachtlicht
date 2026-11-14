@@ -1,0 +1,48 @@
+{
+  "fonts": {
+    "source": "rollup/output/v9/editable/lichtcafe-rollup-gelb-80x200-ENTWURF.svg",
+    "license_source": "rollup/assets/fonts/LibreOffice-LICENSE.txt",
+    "files": {
+      "LiberationSans-Regular.ttf": {
+        "sha256": "597589a852868f782c68e25112bab7785b34bc726f6160dca1519198c6e8c762",
+        "bytes": 411860,
+        "embedded_name_records": {
+          "0": "Digitized data copyright (c) 2010 Google Corporation. \nCopyright (c) 2012 Red Hat, Inc.",
+          "1": "Liberation Sans",
+          "2": "Regular",
+          "8": "Ascender Corporation",
+          "9": "Steve Matteson",
+          "13": "Licensed under the SIL Open Font License, Version 1.1",
+          "14": "http://scripts.sil.org/OFL"
+        }
+      },
+      "LiberationSans-Bold.ttf": {
+        "sha256": "cf445da2ab82045d7c8a00a5d9c29a6e90b0579705e28b1f3e02d5b3a0a91ab8",
+        "bytes": 415428,
+        "embedded_name_records": {
+          "0": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+          "1": "Liberation Sans",
+          "2": "Bold",
+          "8": "Ascender Corporation",
+          "9": "Steve Matteson",
+          "13": "Licensed under the SIL Open Font License, Version 1.1",
+          "14": "http://scripts.sil.org/OFL"
+        }
+      }
+    }
+  },
+  "mpi-logo.pdf": {
+    "source": "print/assets/source-lichtmobil-projekt-a5.pdf",
+    "source_operation_range_inclusive": [
+      36,
+      2399
+    ],
+    "size_mm": [
+      49,
+      16.97028
+    ],
+    "transparent_background": true,
+    "vector_paths_only": true,
+    "sha256": "2a63056ac0c6a871464d2a35231c9d69806d9f6878d21fe4f83cddd487a08767"
+  }
+}

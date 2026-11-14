@@ -1,0 +1,21 @@
+project:
+  type: default
+  output-dir: ../output/html
+  render:
+    - lichtcafe-a4.qmd
+
+lang: de
+engine: knitr
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+format:
+  html:
+    title-block-style: none
+    theme: none
+    embed-resources: true
+    css: flyer-preview.css
+    anchor-sections: false
+    page-layout: full

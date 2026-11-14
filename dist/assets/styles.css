@@ -204,7 +204,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 .photo-credit{margin-top:22px;font-size:12px;color:#d9cfc6}
 @media(max-width:650px){.hero-carousel .carousel-slide figcaption{min-height:64px;padding:13px 17px 8px}.carousel-controls{padding:0 10px 10px;gap:3px}.carousel-dot{width:28px}.carousel-status{font-size:11px;min-width:66px;margin-left:0}}
 /* Team portraits and photographs share the layout in both languages. */
-.team-section .team-people,.team-section .team-group-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.team-section .team-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
 .team-section .team-people{margin-top:46px}
 .team-section .team-portrait,.team-section .team-scene{min-width:0}
 .team-section .team-portrait{margin:0}
@@ -214,8 +214,8 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 .team-section .team-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 .team-section .team-members{margin-top:36px;font-size:19px;line-height:1.65;max-width:900px;color:#625b5a}
 .team-section .team-members strong{font-weight:550;color:var(--ink)}
-.team-section .team-group-gallery{margin-top:46px;padding-top:36px;border-top:1px solid var(--line)}
+.team-section .team-group-gallery{display:block;margin-top:46px;padding-top:36px;border-top:1px solid var(--line)}
 .team-section .team-scene{margin:0}
 .team-section .team-scene img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
 .team-section .team-scene figcaption{margin-top:13px;font-size:15px;line-height:1.6;color:#625b5a}
-@media(max-width:650px){.team-section .team-people,.team-section .team-group-gallery{grid-template-columns:1fr;gap:32px}.team-section .team-people{margin-top:34px}.team-section .team-group-gallery{margin-top:34px;padding-top:28px}.team-section .team-members{font-size:17px}}
+@media(max-width:650px){.team-section .team-people{grid-template-columns:1fr;gap:32px}.team-section .team-people{margin-top:34px}.team-section .team-group-gallery{margin-top:34px;padding-top:28px}.team-section .team-members{font-size:17px}}

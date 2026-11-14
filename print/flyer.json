@@ -1,0 +1,31 @@
+{
+  "source": "print/assets/source-lichtmobil-projekt-a5.pdf",
+  "copy_revision": "Project lead's instructions, 14 November 2026: open offer from Friday 20 November; study phase later; further information online.",
+  "url": "https://wasmachtlicht.de",
+  "brand": "WAS MACHT LICHT?",
+  "kicker": "DAS LICHTCAFÉ IN TÜBINGEN",
+  "headline": ["Morgens", "Licht tanken."],
+  "subtitle": "Licht erleben. Forschung kennenlernen.",
+  "subtitle_lines": ["Licht erleben.", "Forschung kennenlernen."],
+  "offer": "Offenes Angebot ab",
+  "start_date": "Freitag, 20. November 2026",
+  "place": "Europaplatz, Tübingen",
+  "study": "Studienphase folgt später.",
+  "website_hint": "Alle weiteren Informationen auf unserer Website.",
+  "photos": [
+    {"file": "lichtcafe-aussen.jpg", "caption": "Das Lichtcafé von außen"},
+    {"file": "lichtcafe-innen.jpg", "caption": "Einblick ins Lichtcafé"}
+  ],
+  "photo_credit": "Fotos: Verena Müller",
+  "contact": "FRAGEN & KONTAKT",
+  "website": "wasmachtlicht.de",
+  "email": "info@wasmachtlicht.de",
+  "attribution": [
+    "Ein Projekt des Max-Planck-Instituts",
+    "für biologische Kybernetik"
+  ],
+  "qr_label": "Weitere Infos",
+  "design_reference": "Lichtcafé Roll-up v9 / revision 9.1",
+  "content_inset_mm": 16,
+  "raster_dpi": 300
+}

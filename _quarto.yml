@@ -6,6 +6,7 @@ project:
     - en/index.qmd
   resources:
     - assets/
+    - "!print/**"
   post-render:
     - python3 scripts/finalize-html.py
 format:

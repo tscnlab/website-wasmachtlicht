@@ -1,0 +1,170 @@
+{
+  "pages": 1,
+  "page_mm": [
+    210,
+    297
+  ],
+  "design_reference": "rollup-v9",
+  "edge_fade": false,
+  "corner_rgb": [
+    [
+      254,
+      234,
+      197
+    ],
+    [
+      246,
+      157,
+      86
+    ],
+    [
+      255,
+      245,
+      212
+    ],
+    [
+      255,
+      245,
+      212
+    ]
+  ],
+  "raster_dpi": 300,
+  "qr_url": "https://wasmachtlicht.de",
+  "qr_extent_mm": 30,
+  "photos": [
+    {
+      "file": "lichtcafe-aussen.jpg",
+      "caption": "Das Lichtcafé von außen"
+    },
+    {
+      "file": "lichtcafe-innen.jpg",
+      "caption": "Einblick ins Lichtcafé"
+    }
+  ],
+  "a5_page_mm": [
+    148,
+    210
+  ],
+  "a5_qr_extent_mm": 21.21212121212121,
+  "content": [
+    {
+      "text": "WAS MACHT LICHT?",
+      "x_mm": 24.5,
+      "baseline_from_top_mm": 19,
+      "width_mm": 39.723,
+      "size_pt": 11.2
+    },
+    {
+      "text": "DAS LICHTCAFÉ IN TÜBINGEN",
+      "x_mm": 20,
+      "baseline_from_top_mm": 36.3,
+      "width_mm": 62.793,
+      "size_pt": 12
+    },
+    {
+      "text": "Morgens",
+      "x_mm": 16,
+      "baseline_from_top_mm": 61,
+      "width_mm": 88.201,
+      "size_pt": 60
+    },
+    {
+      "text": "Licht tanken.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 84,
+      "width_mm": 130.545,
+      "size_pt": 60
+    },
+    {
+      "text": "Licht erleben. Forschung kennenlernen.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 97,
+      "width_mm": 89.523,
+      "size_pt": 14.4
+    },
+    {
+      "text": "Das Lichtcafé von außen",
+      "x_mm": 16,
+      "baseline_from_top_mm": 172.3,
+      "width_mm": 39.024,
+      "size_pt": 10
+    },
+    {
+      "text": "Einblick ins Lichtcafé",
+      "x_mm": 108,
+      "baseline_from_top_mm": 172.3,
+      "width_mm": 32.746,
+      "size_pt": 10
+    },
+    {
+      "text": "Offenes Angebot ab",
+      "x_mm": 16,
+      "baseline_from_top_mm": 186,
+      "width_mm": 61.334,
+      "size_pt": 18.3
+    },
+    {
+      "text": "Freitag, 20. November 2026",
+      "x_mm": 16,
+      "baseline_from_top_mm": 197,
+      "width_mm": 86.806,
+      "size_pt": 19
+    },
+    {
+      "text": "Europaplatz, Tübingen",
+      "x_mm": 16,
+      "baseline_from_top_mm": 207,
+      "width_mm": 50.567,
+      "size_pt": 13.3
+    },
+    {
+      "text": "Studienphase folgt später.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 218,
+      "width_mm": 55.373,
+      "size_pt": 12.5
+    },
+    {
+      "text": "Alle weiteren Informationen auf unserer Website.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 226,
+      "width_mm": 90.008,
+      "size_pt": 11.8
+    },
+    {
+      "text": "FRAGEN & KONTAKT",
+      "x_mm": 16,
+      "baseline_from_top_mm": 235.5,
+      "width_mm": 36.647,
+      "size_pt": 10
+    },
+    {
+      "text": "wasmachtlicht.de",
+      "x_mm": 30,
+      "baseline_from_top_mm": 248,
+      "width_mm": 55.874,
+      "size_pt": 19
+    },
+    {
+      "text": "info@wasmachtlicht.de",
+      "x_mm": 30,
+      "baseline_from_top_mm": 264,
+      "width_mm": 46.498,
+      "size_pt": 12.8
+    },
+    {
+      "text": "Weitere Infos",
+      "x_mm": 162.5,
+      "baseline_from_top_mm": 235.5,
+      "width_mm": 22.15,
+      "size_pt": 10
+    },
+    {
+      "text": "Fotos: Verena Müller",
+      "x_mm": 155,
+      "baseline_from_top_mm": 287.5,
+      "width_mm": 32.744,
+      "size_pt": 10
+    }
+  ]
+}

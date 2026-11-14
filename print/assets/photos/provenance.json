@@ -1,0 +1,25 @@
+{
+  "source_gallery": "https://www.picdrop.com/verenamuellerfotografie/7e4Z7c46Ma",
+  "photographer": "Verena Müller",
+  "processing": "EXIF orientation, sRGB, downsample; no crop or retouching",
+  "photos": [
+    {
+      "source": "Max_Planck_Licht_045.jpg",
+      "sha256": "7c2be86ddf6e8dc38c21c685097b5151fc3b6dd3ead9ee698e79a3566dc7eef8",
+      "output": "lichtcafe-aussen.jpg",
+      "dimensions": [
+        1800,
+        1200
+      ]
+    },
+    {
+      "source": "Max_Planck_Licht_073.jpg",
+      "sha256": "66824171f9dd87cc05fed0955ab34ff6da44a568ef58bbe1ba19ea68bfd4aeb5",
+      "output": "lichtcafe-innen.jpg",
+      "dimensions": [
+        1800,
+        1200
+      ]
+    }
+  ]
+}
