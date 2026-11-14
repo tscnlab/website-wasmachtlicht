@@ -17,7 +17,42 @@ site-root: ..
 <a class="programme-banner programme-banner--inline" href="https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/hochschulsport/sgm-betabalance/mental-health-days-angebote/" hreflang="de"><img src="../assets/events/mental-health-days-2026-banner.webp" width="1200" height="300" alt="Mental Health Days 2026: talks, workshops, practical activities and advice. Open the programme in German." loading="lazy"></a>
 <p>The trailer was previously used for the “Nachtmensch oder Frühaufsteher?” science roadshow, which is no longer active. Its former website remains available as an archive. <a class="inline-link" href="https://roadshow.tscnlab.org/" hreflang="de">Archived Roadshow website (in German) <span aria-hidden="true">↗</span></a></p>
 <p>The Light Café project investigates methods for adaptive field interventions and how light conditions relate to circadian, sleep and cognitive outcomes.</p><a class="inline-link" href="../assets/lichtmobil-projekt-a5.pdf" type="application/pdf" hreflang="de">Project flyer (PDF, in German) <span aria-hidden="true">↗</span></a></div></div></section>
-<section class="section team-section" id="team"><p class="section-kicker">04 / TEAM & SCIENTIFIC CONTACT</p><div class="intro-layout"><div><h2>Study team</h2><a class="lab-signature" href="https://www.tscnlab.org/" aria-label="tSCN Lab – Research group website"><img src="../assets/logos/tscn.png" width="363" height="363" alt="tSCN Lab" loading="lazy"><span>tSCN Lab <span aria-hidden="true">↗</span></span></a></div><div><p class="lead">Prof. Dr. Manuel Spitschan</p><p class="team-copy">Scientific lead · Translational Sensory and Circadian Neuroscience<br>Max Planck Institute for Biological Cybernetics, Tübingen</p><div class="team-links"><a href="https://www.tscnlab.org/">TSCN Lab <span aria-hidden="true">↗</span></a><a href="https://www.kyb.tuebingen.mpg.de/614159/translational-sensory-and-circadian-neuroscience">Research group <span aria-hidden="true">↗</span></a><a href="https://www.tum.de/en/">Technical University of Munich <span aria-hidden="true">↗</span></a></div></div></div></section>
+<section class="section team-section" id="team" aria-labelledby="team-title">
+  <p class="section-kicker">04 / TEAM & SCIENTIFIC CONTACT</p>
+  <div class="intro-layout">
+    <div>
+      <h2 id="team-title">Study team</h2>
+      <p class="section-aside">Max Planck Institute for<br>Biological Cybernetics, Tübingen</p>
+      <a class="lab-signature" href="https://www.tscnlab.org/" aria-label="tSCN Lab – Research group website"><img src="../assets/logos/tscn.png" width="363" height="363" alt="tSCN Lab" loading="lazy"><span>tSCN Lab <span aria-hidden="true">↗</span></span></a>
+    </div>
+    <div>
+      <p class="lead">A project of the Translational Sensory and Circadian Neuroscience research group.</p>
+      <p class="team-copy">At the Max Planck Institute for Biological Cybernetics in Tübingen, we investigate how light influences human physiology and behaviour.</p>
+      <div class="team-links"><a href="https://www.tscnlab.org/">TSCN Lab <span aria-hidden="true">↗</span></a><a href="https://www.kyb.tuebingen.mpg.de/614159/translational-sensory-and-circadian-neuroscience">Research group <span aria-hidden="true">↗</span></a><a href="https://www.tum.de/en/">Technical University of Munich <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </div>
+  <p class="team-members"><strong>Prof. Dr. Manuel Spitschan</strong> leads the project. <strong>Chikondano Daza</strong> is a research associate on the team.</p>
+  <div class="team-people">
+    <figure class="team-portrait">
+      <a class="team-photo-link" href="../assets/photos/portrait-011.webp" aria-label="Open the full photograph"><img src="../assets/photos/portrait-011.webp" srcset="../assets/photos/portrait-011-600.webp 600w, ../assets/photos/portrait-011.webp 1200w" sizes="(max-width: 650px) 86vw, 43vw" width="1200" height="1800" alt="Portrait at the research trailer." loading="lazy" decoding="async"></a>
+      <figcaption>Photo: Verena Müller</figcaption>
+    </figure>
+    <figure class="team-portrait">
+      <a class="team-photo-link" href="../assets/photos/portrait-019.webp" aria-label="Open the full photograph"><img src="../assets/photos/portrait-019.webp" srcset="../assets/photos/portrait-019-600.webp 600w, ../assets/photos/portrait-019.webp 1200w" sizes="(max-width: 650px) 86vw, 43vw" width="1200" height="1800" alt="Portrait in front of the open research trailer." loading="lazy" decoding="async"></a>
+      <figcaption>Photo: Verena Müller</figcaption>
+    </figure>
+  </div>
+  <div class="team-group-gallery">
+    <figure class="team-scene">
+      <a class="team-photo-link" href="../assets/photos/team-trailer.webp" aria-label="Open the full-size photograph of the team at the research trailer"><img src="../assets/photos/team-trailer.webp" srcset="../assets/photos/team-trailer-1200.webp 1200w, ../assets/photos/team-trailer.webp 2400w" sizes="(max-width: 650px) 86vw, 43vw" width="2400" height="1600" alt="The team at the research trailer." loading="lazy" decoding="async"></a>
+      <figcaption>The team at the research trailer.<span>Photo: Verena Müller</span></figcaption>
+    </figure>
+    <figure class="team-scene">
+      <a class="team-photo-link" href="../assets/photos/team-lichtcafe.webp" aria-label="Open the full-size photograph of the team in the Light Café"><img src="../assets/photos/team-lichtcafe.webp" srcset="../assets/photos/team-lichtcafe-1200.webp 1200w, ../assets/photos/team-lichtcafe.webp 2400w" sizes="(max-width: 650px) 86vw, 43vw" width="2400" height="1600" alt="The team in the Light Café." loading="lazy" decoding="async"></a>
+      <figcaption>The team in the Light Café.<span>Photo: Verena Müller</span></figcaption>
+    </figure>
+  </div>
+</section>
 <section class="signup-section section" id="contact"><div><p class="eyebrow">SCIENTIFIC ENQUIRIES</p><h2>Scientific<br>contact</h2></div><div class="signup-content"><p>For questions about the study or potential scientific collaboration, contact the scientific lead.</p><a class="button button-dark" href="mailto:manuel.spitschan@tuebingen.mpg.de?subject=Light%20Caf%C3%A9%20%E2%80%93%20scientific%20enquiry">Contact Manuel Spitschan <span aria-hidden="true">↗</span></a><p class="small"><a href="https://tuspl22-redcap.srv.mwn.de/redcap/surveys/?s=R839FPF3HNN8MP9L" data-signup>Register your interest in taking part</a>. Submitting this form does not confirm enrolment.</p><p class="small">For visits and participation: <a href="mailto:info@wasmachtlicht.de">info@wasmachtlicht.de</a> · <a href="../#mitmachen">Dates and participation information in German</a>.</p></div></section>
 <aside class="source-note section"><p><strong>About this page.</strong> Opening, drop-in and study-start dates are taken from the <a href="../assets/lichtmobil-projekt-a5.pdf" type="application/pdf" hreflang="de">project flyer (PDF, in German)</a>. The scientific overview is based on the project’s research description. Detailed participation information and individual study appointments will be provided before enrolment.</p><p><strong>Further reading.</strong> <a href="https://www.kyb.tuebingen.mpg.de/614159/translational-sensory-and-circadian-neuroscience">Research themes and methods at the Max Planck Institute for Biological Cybernetics</a> · <a href="https://www.tscnlab.org/">TSCN Lab</a>.</p></aside>
 ```

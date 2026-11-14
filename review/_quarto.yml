@@ -1,0 +1,53 @@
+project:
+  type: default
+  output-dir: output
+  render:
+    - photo-review.qmd
+
+lang: de
+toc: false
+number-sections: false
+execute:
+  freeze: false
+
+format:
+  html:
+    theme: none
+    css: photo-review.css
+    embed-resources: true
+    page-layout: full
+    anchor-sections: false
+    title-block-style: none
+  pdf:
+    pdf-engine: xelatex
+    documentclass: scrartcl
+    papersize: a4
+    fontsize: 10.5pt
+    mainfont: Arial
+    sansfont: Arial
+    colorlinks: true
+    linkcolor: "BrickRed"
+    urlcolor: "BrickRed"
+    geometry:
+      - top=18mm
+      - bottom=18mm
+      - left=18mm
+      - right=18mm
+    include-in-header:
+      text: |
+        \usepackage{xcolor}
+        \definecolor{lichtcoral}{HTML}{B63E35}
+        \definecolor{lichtink}{HTML}{2D2930}
+        \definecolor{lichtmuted}{HTML}{625B5A}
+        \KOMAoptions{parskip=half}
+        \setkomafont{section}{\normalfont\Large\bfseries\color{lichtink}}
+        \setkomafont{subsection}{\normalfont\large\bfseries\color{lichtink}}
+        \setkomafont{pageheadfoot}{\normalfont\small\color{lichtmuted}}
+        \usepackage[automark]{scrlayer-scrpage}
+        \clearpairofpagestyles
+        \ihead{Was macht Licht?}
+        \ohead{Fotografien und Team}
+        \ifoot{Fotos: Verena Müller}
+        \ofoot{\pagemark}
+        \setlength{\parindent}{0pt}
+    keep-tex: true

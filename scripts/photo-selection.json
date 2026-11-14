@@ -1,0 +1,13 @@
+{
+  "source_gallery": "https://www.picdrop.com/verenamuellerfotografie/7e4Z7c46Ma",
+  "gallery_title": "Max Planck Lichtmobil",
+  "photographer": "Verena Müller",
+  "retrieved": "2026-11-14",
+  "photos": [
+    {"source": "Max_Planck_Licht_045.jpg", "output": "trailer", "widths": [1200, 2400]},
+    {"source": "Max_Planck_Licht_011.jpg", "output": "portrait-011", "widths": [600, 1200]},
+    {"source": "Max_Planck_Licht_019.jpg", "output": "portrait-019", "widths": [600, 1200]},
+    {"source": "Max_Planck_Licht_025.jpg", "output": "team-trailer", "widths": [1200, 2400]},
+    {"source": "Max_Planck_Licht_007.jpg", "output": "team-lichtcafe", "widths": [1200, 2400]}
+  ]
+}

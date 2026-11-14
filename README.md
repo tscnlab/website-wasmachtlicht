@@ -89,13 +89,25 @@ The MPI logo is placed in the header. MPF, MPS/MPG and MPI logos are also presen
 
 The logos have not been redrawn, rearranged or modified with image generation. The supplied print artwork is retained rather than inventing a mirrored web variant.
 
-## Photograph
+## Photographs and team
 
-`assets/roadshow-verena-mueller.webp` is a real photograph of the existing mobile research trailer, credited to **Verena Müller**. Original: `32 Fotos Verena/Fuer Nextcloud/Nachtmensch_oder_Frühaufsteher_40.jpg` in the user's roadshow project. The source set also contains the folders `verenamuellerfotografie_Max_Planck_TUE` and `20250426 Verena Müller Roadshow Photos`, which support the attribution. The original is 7087 × 4727 pixels; the website copy is resized to 2400 × 1601 and encoded as WebP. No generated elements, retouching or synthetic alterations have been applied. The responsive layout may crop the display on larger screens.
+The hero and team section use photographs by **Verena Müller** from the project lead’s supplied [“Max Planck Lichtmobil” gallery](https://www.picdrop.com/verenamuellerfotografie/7e4Z7c46Ma), downloaded on 14 November 2026. The hero shows the current Light Café trailer. Both German and English pages include two individual portraits, the team outside the trailer and the team inside. Each photograph carries a visible credit and descriptive alternative text. The German navigation also links directly to the team section.
 
-The caption identifies it as a historical photograph of the trailer during the former science roadshow; the image is not presented as a photograph of the completed Light Café. The previously generated café image has been removed from the current sources and exported website.
+`scripts/photo-selection.json` records the selected original filenames; `scripts/photo-provenance.json` records their SHA-256 hashes, dimensions and exported sizes. The five selected full-resolution downloads remain in the ignored local `photo-originals/` directory. Only the selected, optimized derivatives are included in the website. No gallery session tokens or download URLs are stored in the published assets.
 
-`scripts/prepare-brand-assets.py` records the reproducible conversion process. It requires the original roadshow project, Ghostscript and Pillow. Normal `quarto render` builds use the checked-in assets and require none of those external originals.
+Regenerate the photos with Python 3 and Pillow:
+
+```sh
+python3 scripts/prepare-photo-assets.py photo-originals
+quarto render
+python3 scripts/check-site.py
+```
+
+The preparation script applies EXIF orientation, converts embedded colour profiles to sRGB, resizes without changing the original composition and exports WebP images for the site plus JPEGs for the photo review. Camera metadata is omitted from the exports. Responsive `srcset` attributes serve smaller files when appropriate; portraits and group photos load lazily. Portraits use a centred 4:5 display frame, with the full photograph available by selecting the image. The hero and team photographs retain their full composition. No generated elements or retouching are used.
+
+The supplementary Quarto document `review/photo-review.qmd` produces `review/output/photo-review.html` and `review/output/photo-review.pdf`. Build it using `quarto render review/photo-review.qmd --to all` after preparing the photos; this requires XeLaTeX and Arial. The photo review is separate from the website build and is not deployed by GitHub Pages.
+
+The former Roadshow photograph `assets/roadshow-verena-mueller.webp` is retained as an existing asset but is no longer displayed. Its conversion, alongside the supplied logos, remains documented in `scripts/prepare-brand-assets.py`.
 
 ## Social preview
 

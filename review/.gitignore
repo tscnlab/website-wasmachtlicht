@@ -1,0 +1,9 @@
+.quarto/
+tmp/
+*.tex
+output/*.tex
+output/*.log
+output/*.aux
+output/*.out
+
+/.quarto/

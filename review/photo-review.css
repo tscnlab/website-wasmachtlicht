@@ -1,0 +1,43 @@
+:root {
+  --ink: #2d2930;
+  --coral: #b63e35;
+  --paper: #fff;
+  --muted: #625b5a;
+  --line: #e8ded5;
+}
+
+* { box-sizing: border-box; }
+html { background: #f8f5ee; }
+body { max-width: 1100px; margin: 0 auto; color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 1.6; }
+main { max-width: 1100px; margin: 0 auto; }
+.review-page { background: var(--paper); margin: 36px 0; padding: 52px 58px; border-top: 7px solid #fed300; box-shadow: 0 10px 32px #2d293008; }
+h1 { font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 0 0 18px; letter-spacing: -.025em; }
+p { margin: 16px 0; }
+img { display: block; max-width: 100%; height: auto; border-radius: 8px; }
+figure { margin: 24px 0 14px; }
+figure p { margin: 0; }
+.portrait-panels { margin-top: 28px; margin-bottom: 30px; }
+.portrait-panel { min-width: 0; }
+.portrait-panel figure { margin-top: 0; }
+.portrait-page .portrait-panel img { width: 100%; }
+.portrait-page .portrait-panel p { margin: 12px 0; }
+.photo-source { color: var(--muted); font-size: 14px; margin-top: 28px; border-top: 1px solid var(--line); padding-top: 16px; }
+a { color: var(--coral); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--coral); outline-offset: 5px; }
+.team-page figure { max-width: 760px; }
+.team-page img { max-width: 760px; }
+.team-page figure + p { margin-bottom: 30px; }
+
+@media(max-width: 700px) {
+  .review-page { margin: 18px 12px; padding: 30px 24px; }
+  .quarto-layout-row { display: block; }
+  .quarto-layout-cell { width: 100% !important; margin-bottom: 30px; }
+  .quarto-figure-spacer { display: none; }
+  .team-page img { width: 100% !important; }
+}
+
+@media print {
+  html { background: white; }
+  .review-page { box-shadow: none; margin: 0; padding: 0; border: 0; break-after: page; }
+  .review-page:last-child { break-after: auto; }
+}

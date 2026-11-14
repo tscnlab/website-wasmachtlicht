@@ -1,0 +1,143 @@
+{
+  "source_gallery": "https://www.picdrop.com/verenamuellerfotografie/7e4Z7c46Ma",
+  "gallery_title": "Max Planck Lichtmobil",
+  "photographer": "Verena Müller",
+  "retrieved": "2026-11-14",
+  "photos": [
+    {
+      "source": "Max_Planck_Licht_045.jpg",
+      "output": "trailer",
+      "widths": [
+        1200,
+        2400
+      ],
+      "sha256": "7c2be86ddf6e8dc38c21c685097b5151fc3b6dd3ead9ee698e79a3566dc7eef8",
+      "original_dimensions": [
+        6916,
+        4611
+      ],
+      "derivatives": [
+        {
+          "file": "assets/photos/trailer-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 202718
+        },
+        {
+          "file": "assets/photos/trailer.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 651308
+        }
+      ]
+    },
+    {
+      "source": "Max_Planck_Licht_011.jpg",
+      "output": "portrait-011",
+      "widths": [
+        600,
+        1200
+      ],
+      "sha256": "aa1ab146b53e723cc59f8dfe9c4b74519c48d6470d072ffce6f133bdbabb97b0",
+      "original_dimensions": [
+        4724,
+        7087
+      ],
+      "derivatives": [
+        {
+          "file": "assets/photos/portrait-011-600.webp",
+          "width": 600,
+          "height": 900,
+          "bytes": 92046
+        },
+        {
+          "file": "assets/photos/portrait-011.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 285526
+        }
+      ]
+    },
+    {
+      "source": "Max_Planck_Licht_019.jpg",
+      "output": "portrait-019",
+      "widths": [
+        600,
+        1200
+      ],
+      "sha256": "f79c938f1bfce936e2119674613ab26cd3e68a7132f47d0dad4f0b50d9072cfa",
+      "original_dimensions": [
+        4724,
+        7087
+      ],
+      "derivatives": [
+        {
+          "file": "assets/photos/portrait-019-600.webp",
+          "width": 600,
+          "height": 900,
+          "bytes": 60900
+        },
+        {
+          "file": "assets/photos/portrait-019.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 195520
+        }
+      ]
+    },
+    {
+      "source": "Max_Planck_Licht_025.jpg",
+      "output": "team-trailer",
+      "widths": [
+        1200,
+        2400
+      ],
+      "sha256": "e13d5836c0f3419ffc85bb0e9bbc41d70527d851ed4b97ae0790d3e25a7016ac",
+      "original_dimensions": [
+        7087,
+        4724
+      ],
+      "derivatives": [
+        {
+          "file": "assets/photos/team-trailer-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 129308
+        },
+        {
+          "file": "assets/photos/team-trailer.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 417976
+        }
+      ]
+    },
+    {
+      "source": "Max_Planck_Licht_007.jpg",
+      "output": "team-lichtcafe",
+      "widths": [
+        1200,
+        2400
+      ],
+      "sha256": "4d27860a04f005375a4efb0d25a8be87f8ca982c591e3f169ee48ef749187ce0",
+      "original_dimensions": [
+        7087,
+        4724
+      ],
+      "derivatives": [
+        {
+          "file": "assets/photos/team-lichtcafe-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 83840
+        },
+        {
+          "file": "assets/photos/team-lichtcafe.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 344370
+        }
+      ]
+    }
+  ]
+}
