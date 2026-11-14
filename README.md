@@ -34,7 +34,7 @@ The apex DNS must use GitHub Pages' A/AAAA records. If `www` is used, its CNAME 
 The registration links point to the user-supplied REDCap survey:
 https://tuspl22-redcap.srv.mwn.de/redcap/surveys/?s=R839FPF3HNN8MP9L
 
-Both language pages now place a direct interest-registration button in the header and hero; the header button also remains visible on phones. The German FAQ and participation section and the English participation link retain the same destination. All these links use real static href values and work without JavaScript. The form expresses interest in the study; it does not confirm enrolment. Personal information is entered in REDCap, not stored by this static site. The existing contact-email and flyer links remain available.
+Both language pages place one direct interest-registration button at the top, in the header; it also remains visible on phones. Its German label is “Interesse geweckt? Melde dich unverbindlich an”, with an English equivalent. The hero contains only secondary navigation links, avoiding a duplicate registration button. The German FAQ and participation section and the English participation link retain the same destination. All these links use real static href values and work without JavaScript. The form expresses interest in the study; it does not confirm enrolment. Personal information is entered in REDCap, not stored by this static site. The existing contact-email and flyer links remain available.
 
 When changing the destination, update `SIGNUP_URL` in `assets/site.js` and the `data-signup` anchors in `index.qmd`, `en/index.qmd` and `template.html`, then render again. The script updates destinations only; it does not replace localized labels or the privacy/contact note.
 
