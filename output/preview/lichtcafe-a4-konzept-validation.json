@@ -1,0 +1,171 @@
+{
+  "pages": 1,
+  "page_mm": [
+    210,
+    297
+  ],
+  "photos": [
+    {
+      "file": "lichtcafe-aussen-078.jpg",
+      "source": "Max_Planck_Licht_078.jpg",
+      "caption": "Das Lichtcafé von außen"
+    },
+    {
+      "file": "lichtcafe-innen.jpg",
+      "source": "Max_Planck_Licht_092.jpg",
+      "caption": "Einblick ins Lichtcafé"
+    }
+  ],
+  "photo_credit_present": false,
+  "qr_extent_mm": 30,
+  "qr_url": "https://wasmachtlicht.de",
+  "qr_quiet_modules": 4,
+  "contact_gap_after_hint_baseline_mm": 8,
+  "content": [
+    {
+      "text": "WAS MACHT LICHT?",
+      "x_mm": 24.5,
+      "baseline_from_top_mm": 19,
+      "width_mm": 39.723,
+      "size_pt": 11.2
+    },
+    {
+      "text": "DAS LICHTCAFÉ IN TÜBINGEN",
+      "x_mm": 20,
+      "baseline_from_top_mm": 36.3,
+      "width_mm": 62.793,
+      "size_pt": 12
+    },
+    {
+      "text": "Morgens",
+      "x_mm": 16,
+      "baseline_from_top_mm": 56,
+      "width_mm": 79.381,
+      "size_pt": 54
+    },
+    {
+      "text": "Licht tanken.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 77,
+      "width_mm": 117.491,
+      "size_pt": 54
+    },
+    {
+      "text": "Die Tage werden kürzer, wir bekommen weniger Tageslicht.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 87.2,
+      "width_mm": 124.909,
+      "size_pt": 13.3
+    },
+    {
+      "text": "Licht am Morgen kann eine Starthilfe für den Tag sein.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 92.85000000000001,
+      "width_mm": 112.93,
+      "size_pt": 13.3
+    },
+    {
+      "text": "Im mobilen Lichtcafé kannst du Licht erleben und unsere Forschung",
+      "x_mm": 16,
+      "baseline_from_top_mm": 98.5,
+      "width_mm": 141.102,
+      "size_pt": 13.3
+    },
+    {
+      "text": "kennenlernen. Wir untersuchen, wie morgendliches Licht unsere",
+      "x_mm": 16,
+      "baseline_from_top_mm": 104.15,
+      "width_mm": 133.533,
+      "size_pt": 13.3
+    },
+    {
+      "text": "innere Uhr, unseren Schlaf und unsere Aufmerksamkeit beeinflusst.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 109.80000000000001,
+      "width_mm": 140.57,
+      "size_pt": 13.3
+    },
+    {
+      "text": "Das Lichtcafé von außen",
+      "x_mm": 16,
+      "baseline_from_top_mm": 179,
+      "width_mm": 39.024,
+      "size_pt": 10
+    },
+    {
+      "text": "Einblick ins Lichtcafé",
+      "x_mm": 108,
+      "baseline_from_top_mm": 179,
+      "width_mm": 32.746,
+      "size_pt": 10
+    },
+    {
+      "text": "Offenes Angebot ab",
+      "x_mm": 16,
+      "baseline_from_top_mm": 190,
+      "width_mm": 51.279,
+      "size_pt": 15.3
+    },
+    {
+      "text": "Freitag, 20. November 2026",
+      "x_mm": 16,
+      "baseline_from_top_mm": 199.5,
+      "width_mm": 86.806,
+      "size_pt": 19
+    },
+    {
+      "text": "Europaplatz, Tübingen",
+      "x_mm": 16,
+      "baseline_from_top_mm": 208,
+      "width_mm": 50.567,
+      "size_pt": 13.3
+    },
+    {
+      "text": "Studienphase folgt später.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 216,
+      "width_mm": 53.159,
+      "size_pt": 12
+    },
+    {
+      "text": "Alle weiteren Informationen auf unserer Website.",
+      "x_mm": 16,
+      "baseline_from_top_mm": 222,
+      "width_mm": 87.72,
+      "size_pt": 11.5
+    },
+    {
+      "text": "FRAGEN & KONTAKT",
+      "x_mm": 16,
+      "baseline_from_top_mm": 235.5,
+      "width_mm": 36.647,
+      "size_pt": 10
+    },
+    {
+      "text": "wasmachtlicht.de",
+      "x_mm": 30,
+      "baseline_from_top_mm": 248,
+      "width_mm": 55.874,
+      "size_pt": 19
+    },
+    {
+      "text": "info@wasmachtlicht.de",
+      "x_mm": 30,
+      "baseline_from_top_mm": 264,
+      "width_mm": 46.498,
+      "size_pt": 12.8
+    },
+    {
+      "text": "Weitere Infos",
+      "x_mm": 162.5,
+      "baseline_from_top_mm": 235.5,
+      "width_mm": 22.15,
+      "size_pt": 10
+    }
+  ],
+  "links": [
+    "https://wasmachtlicht.de",
+    "mailto:info@wasmachtlicht.de",
+    "https://wasmachtlicht.de"
+  ]
+}

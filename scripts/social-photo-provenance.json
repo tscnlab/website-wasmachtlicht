@@ -1,0 +1,16 @@
+{
+  "source_gallery": "https://www.picdrop.com/verenamuellerfotografie/7e4Z7c46Ma",
+  "photographer": "Verena Müller",
+  "source": "Max_Planck_Licht_038.jpg",
+  "sha256": "4dc760561408be88f47f4c23da3b6daea4a7cbc72870b193f81f3d5646eaa43d",
+  "original_dimensions": [
+    6957,
+    4638
+  ],
+  "output": "assets/social-preview-038.jpg",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "processing": "EXIF orientation, sRGB, resize; no crop or retouching"
+}

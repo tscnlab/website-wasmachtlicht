@@ -139,6 +139,11 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 @media(max-width:1200px){.institute-brand{width:280px}.hero h1{font-size:clamp(55px,5.8vw,70px)}.hero-copy{padding-left:5vw;padding-right:3.5vw}.hero-image{margin-right:26px}}
 @media(max-width:1000px){.site-header{height:88px}.hero{grid-template-columns:1fr 1fr;min-height:570px}.hero h1{font-size:clamp(43px,5.9vw,59px)}.hero-copy{padding:42px 4.5vw}.hero-description{font-size:17px}.hero-image{margin-right:20px}.hero-image figcaption{padding:14px 17px}}
 @media(max-width:650px){.site-header{height:80px}.institute-brand{width:min(57vw,280px)}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:35px 7% 30px}.hero h1{font-size:clamp(43px,10.6vw,64px);line-height:1.08;margin:24px 0 26px}.hero-description{font-size:17px;max-width:410px}.hero-actions{margin-top:26px;gap:24px}.hero-note{margin-top:23px;max-width:360px}.hero-copy::before{left:34%;height:59%}.hero-image{margin:0 6% 27px;border-radius:12px}.hero-image figcaption{padding:13px 17px}.facts-bar{padding-top:27px;padding-bottom:27px}.science-hero h1{font-size:clamp(34px,7.8vw,48px)}.science-hero::before{left:48%;height:61%}.signup-section::before{left:70%}}
+/* Study interest is available at the top of both pages, including on phones. */
+.header-actions>.header-signup{white-space:nowrap}
+.science-hero .hero-actions .button{margin-top:0}
+@media(max-width:1100px){.site-header .desktop-nav{display:none}}
+@media(max-width:650px){.site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;height:auto;gap:8px 18px;padding:12px 6%}.site-header .institute-brand{grid-column:1;grid-row:1;padding:0}.site-header .header-actions{display:contents}.site-header .language-switch{grid-column:2;grid-row:1;justify-self:end}.site-header .header-actions>.header-signup{display:flex;grid-column:1/-1;grid-row:2;justify-content:space-between;width:100%;min-height:44px;font-size:14px}}
 /* Public events: chronological rows with the original flyer artwork. */
 .events-section{background:#fff;}
 .events-section .section-heading{margin-bottom:48px}

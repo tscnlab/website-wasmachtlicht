@@ -1,0 +1,28 @@
+{
+  "revision": "A4 concept revision, 14 November 2026. Separate output; previous flyers remain unchanged.",
+  "url": "https://wasmachtlicht.de",
+  "brand": "WAS MACHT LICHT?",
+  "kicker": "DAS LICHTCAFÉ IN TÜBINGEN",
+  "headline": ["Morgens", "Licht tanken."],
+  "concept_lines": [
+    "Die Tage werden kürzer, wir bekommen weniger Tageslicht.",
+    "Licht am Morgen kann eine Starthilfe für den Tag sein.",
+    "Im mobilen Lichtcafé kannst du Licht erleben und unsere Forschung",
+    "kennenlernen. Wir untersuchen, wie morgendliches Licht unsere",
+    "innere Uhr, unseren Schlaf und unsere Aufmerksamkeit beeinflusst."
+  ],
+  "offer": "Offenes Angebot ab",
+  "start_date": "Freitag, 20. November 2026",
+  "place": "Europaplatz, Tübingen",
+  "study": "Studienphase folgt später.",
+  "website_hint": "Alle weiteren Informationen auf unserer Website.",
+  "photos": [
+    {"file": "lichtcafe-aussen-078.jpg", "source": "Max_Planck_Licht_078.jpg", "caption": "Das Lichtcafé von außen"},
+    {"file": "lichtcafe-innen.jpg", "source": "Max_Planck_Licht_092.jpg", "caption": "Einblick ins Lichtcafé"}
+  ],
+  "contact": "FRAGEN & KONTAKT",
+  "website": "wasmachtlicht.de",
+  "email": "info@wasmachtlicht.de",
+  "qr_label": "Weitere Infos",
+  "raster_dpi": 300
+}

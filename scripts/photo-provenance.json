@@ -5,29 +5,29 @@
   "retrieved": "2026-11-14",
   "photos": [
     {
-      "source": "Max_Planck_Licht_058.jpg",
-      "output": "trailer-058",
+      "source": "Max_Planck_Licht_078.jpg",
+      "output": "trailer-078",
       "widths": [
         1200,
         2400
       ],
-      "sha256": "52950802b551ff118890a00b9eb3bf4fb1d3fd34bb0894e938ce982ac588e2b4",
+      "sha256": "b81ba8aec6ff6380af258fbe3c47514069640ffe816454a5440beab466e9f4d2",
       "original_dimensions": [
-        7087,
-        4724
+        7326,
+        4884
       ],
       "derivatives": [
         {
-          "file": "assets/photos/trailer-058-1200.webp",
+          "file": "assets/photos/trailer-078-1200.webp",
           "width": 1200,
           "height": 800,
-          "bytes": 150854
+          "bytes": 101420
         },
         {
-          "file": "assets/photos/trailer-058.webp",
+          "file": "assets/photos/trailer-078.webp",
           "width": 2400,
           "height": 1600,
-          "bytes": 474388
+          "bytes": 339538
         }
       ]
     },

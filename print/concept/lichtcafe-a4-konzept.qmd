@@ -1,0 +1,51 @@
+---
+title: "Das Lichtcafé - A4-Flyer mit Konzepterklärung"
+output-file: lichtcafe-a4-konzept.html
+lang: de
+engine: knitr
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+format:
+  html:
+    title-block-style: none
+    theme: none
+    embed-resources: true
+    css: ../flyer-preview.css
+    anchor-sections: false
+    page-layout: full
+---
+
+```{r}
+#| label: build-concept-flyer
+#| include: false
+python <- Sys.getenv("FLYER_PYTHON")
+if (!nzchar(python)) {
+  bundled <- path.expand("~/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3")
+  python <- if (file.exists(bundled)) bundled else Sys.which("python3")
+}
+result <- system2(python, "../build_flyer_concept.py", stdout = TRUE, stderr = TRUE)
+status <- attr(result, "status")
+if (!is.null(status) && status != 0) stop(paste(result, collapse = "\n"))
+```
+
+::: {.print-notes}
+# Das Lichtcafé: A4-Flyer mit Konzepterklärung
+
+Die neue Fassung erklärt den Hintergrund: kürzere Tage, weniger Tageslicht und Licht am Morgen als mögliche Starthilfe für den Tag. Sie verbindet die Einladung ins mobile Lichtcafé mit der Forschung zu innerer Uhr, Schlaf und Aufmerksamkeit. Sie verwendet die Fotos 078 und 092 sowie die Farben und Lichtstreifen des Roll-ups. Der Fotocredit entfällt auf Wunsch. Frühere Flyer werden beim Erstellen dieser Fassung nicht verändert.
+
+[A4-PDF öffnen](../pdf/lichtcafe-a4-konzept.pdf){.download}
+
+**Offenes Angebot ab Freitag, 20. November 2026. Studienphase folgt später.** Weitere Informationen auf der Website.
+
+Dieses Quarto-Notizbuch erzeugt eine einzelne A4-Seite als PDF und prüft Text, Seitenformat, Bildanzahl und Links. Zum Reproduzieren im Ordner `print/concept` ausführen: `quarto render`. Benötigt werden die gleichen Abhängigkeiten wie für den bisherigen Flyer; gemeinsame Gestaltungselemente stammen aus `../build_flyer.py`. Die bisherige A4-/A5-Erzeugung wird nicht aufgerufen.
+:::
+
+```{r}
+#| label: concept-flyer-preview
+#| out-width: 100%
+#| fig-alt: "A4-Flyer für das Lichtcafé: Morgens Licht tanken. Der Text erklärt kürzere Tage, weniger Tageslicht und Licht am Morgen als mögliche Starthilfe. Im mobilen Lichtcafé kann man Licht erleben und Forschung zu innerer Uhr, Schlaf und Aufmerksamkeit kennenlernen. Darunter Außen- und Innenansicht, Start am Freitag, 20. November 2026, Europaplatz in Tübingen sowie Website, E-Mail und QR-Code."
+knitr::include_graphics("../../output/preview/lichtcafe-a4-konzept.png")
+```
