@@ -38,7 +38,7 @@ for (script in c("../../map/build_map.py", "../build_flyer_concept.py")) {
 
 Die neue Fassung erklärt den Hintergrund: kürzere Tage, weniger Tageslicht und Licht am Morgen als mögliche Starthilfe für den Tag. Sie verbindet die Einladung ins mobile Lichtcafé mit der Forschung zu innerer Uhr, Schlaf und Aufmerksamkeit. Sie verwendet die Fotos 078 und 092 sowie die Farben und Lichtstreifen des Roll-ups. Eine gestaltete Standortkarte zeigt den genauen Standort beim Hauptbahnhof. Für weitere Informationen und die Anmeldung verweist der Flyer ausschließlich auf Website und QR-Code. E-Mail-Adresse und Fotocredit entfallen auf Wunsch. Frühere Flyer werden beim Erstellen dieser Fassung nicht verändert.
 
-Die Überarbeitung vom 15. November gliedert die Erklärung in zwei kurze Textspalten: „Licht als Starthilfe“ und „Erleben & erforschen“. Beide sind an den darunterliegenden Fotos ausgerichtet. Das Datum steht im Mittelpunkt der Besuchsinformationen; der Abschluss bündelt die Handlungsaufforderung.
+Die Überarbeitung vom 15. November gliedert die Erklärung in zwei kurze Textspalten: „Licht als Starthilfe“ und „Erleben & erforschen“. Beide sind an den darunterliegenden Fotos ausgerichtet. Das Datum steht im Mittelpunkt der Besuchsinformationen; eine gemeinsame weiße Fläche fasst Termine, Ort und Karte zusammen. Der Abschluss bündelt die Handlungsaufforderung.
 
 [A4-PDF öffnen](../pdf/lichtcafe-a4-konzept.pdf){.download}
 
@@ -63,6 +63,7 @@ Geprüft wurde die aktuelle A4-Fassung in ihrer gerenderten Gesamtansicht sowie 
 |:--|:--|
 | Der fünfzeilige Erklärungstext hatte keine innere Gliederung; Umbrüche trennten zusammengehörige Formulierungen. | Zwei inhaltlich benannte Spalten unterscheiden saisonalen Anlass und Forschung. Die Zeilen sind kürzer; der Fließtext bleibt mit 13 pt gut lesbar. |
 | Vier fett gesetzte Besuchsinformationen konkurrierten miteinander. | Das Datum bleibt mit 19 pt fett der wichtigste Anker. Angebot und Ort stehen in 13 pt normal, der Studienhinweis in 12 pt normal. |
+| Besuchsinformationen und Karte sollten stärker als zusammengehöriger Bereich erkennbar sein. | Eine gemeinsame weiße Fläche mit abgerundeten Ecken setzt den gesamten Bereich vom Streifenmuster ab. Sie ist genauso breit wie der darunterliegende Anmeldebereich; die Karte bleibt in voller Größe erhalten. |
 | Mehrere Hinweise wiederholten den Verweis auf weitere Informationen. | Eine gemeinsame Aufforderung „Mehr erfahren & Interesse anmelden“ führt zu Website und QR-Code. Der zusätzliche Websitehinweis im Terminblock entfällt. |
 | Viele sehr ähnliche Schriftgrößen erzeugten Unterschiede ohne klare Funktion. | Das Hauptlayout nutzt sieben abgestufte Größen: 54, 22, 19, 14, 13, 12 und 10 pt. Kartenbeschriftung und unverändertes Institutslogo werden separat behandelt. |
 | Die Karte brauchte eine klarere Trennung zwischen Gebäuden und Hintergrund. | Gebäude sind altrosa, der Hauptbahnhof bleibt farblich hervorgehoben. Die Neckar-Beschriftung und separate Quellenleiste entfallen; ein kleiner Kartencredit bleibt innerhalb der Karte. |

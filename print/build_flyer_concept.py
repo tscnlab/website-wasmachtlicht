@@ -86,6 +86,8 @@ def build():
                     width=86 * mm, height=86 * 2 / 3 * mm)
         text(photo["caption"], 179, 10, x=x)
 
+    # One white panel groups the visit details with the full-size location map.
+    rounded(8, 181.5, 194, 46.5, 4.5, white)
     text(DATA["offer"], 190, 13)
     text(DATA["start_date"], 199.5, 19, bold=True)
     text(DATA["place"], 208, 13)
@@ -95,9 +97,8 @@ def build():
     map_scale = 66 * mm / float(location.mediabox.width)
     map_height_mm = float(location.mediabox.height) * map_scale / mm
     assert map_height_mm <= 43.01, "Map must fit beside the visit information"
-    rounded(127.5, 181.5, 67, map_height_mm + 1, 1.5, CREAM)
-    c.linkURL(MAP_URL, (128 * mm, HEIGHT - (182 + map_height_mm) * mm,
-                        194 * mm, HEIGHT - 182 * mm), relative=0)
+    c.linkURL(MAP_URL, (128 * mm, HEIGHT - (183 + map_height_mm) * mm,
+                        194 * mm, HEIGHT - 183 * mm), relative=0)
 
     rounded(8, 230, 194, 43, 4.5, INK)
     text(DATA["contact"], 235.5, 12, bold=True, colour=ACCENT)
@@ -136,7 +137,7 @@ def build():
     reader.pages[0].merge_transformed_page(logo, Transformation().scale(factor).translate(
         16 * mm, HEIGHT - 276 * mm - logo_height))
     reader.pages[0].merge_transformed_page(location, Transformation().scale(map_scale).translate(
-        128 * mm, HEIGHT - (182 + map_height_mm) * mm))
+        128 * mm, HEIGHT - (183 + map_height_mm) * mm))
     writer = PdfWriter()
     writer.add_page(reader.pages[0])
     writer.add_metadata({str(k): str(v) for k, v in reader.metadata.items()})
@@ -163,8 +164,9 @@ def build():
               "concept_column_width_mm": 86, "concept_body_size_pt": 13,
               "concept_leading_pt": round(5.5 * mm, 2),
               "type_sizes_pt": sorted({item["size_pt"] for item in bounds}),
+              "visit_panel": {"box_mm": [8, 181.5, 194, 46.5], "background": "#FFFFFF"},
               "map": {"pin": [48.5171469, 9.0566625], "url": MAP_URL,
-                      "box_mm": [128, 182, 66, round(map_height_mm, 3)]},
+                      "box_mm": [128, 183, 66, round(map_height_mm, 3)]},
               "content": bounds, "links": links}
     VALIDATION.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     subprocess.run([find_poppler(), "-r", str(DATA["raster_dpi"]), "-png", "-singlefile",
