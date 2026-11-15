@@ -42,7 +42,7 @@ Die Überarbeitung vom 15. November gliedert die Erklärung in zwei kurze Textsp
 
 [A4-PDF öffnen](../pdf/lichtcafe-a4-konzept.pdf){.download}
 
-**Offenes Angebot ab Freitag, 20. November 2026. Studienphase folgt später.** Weitere Informationen auf der Website.
+**Offenes Angebot ab Freitag, 20. November 2026. Studienphase ab Januar 2027.** Weitere Informationen auf der Website.
 
 Dieses Quarto-Notizbuch erzeugt zuerst die Standortkarte aus den lokal gespeicherten Kartendaten und anschließend eine einzelne A4-Seite als PDF. Es prüft Text, Seitenformat, Bildanzahl und Links. Zum Reproduzieren im Ordner `print/concept` ausführen: `quarto render`. Benötigt werden die gleichen Abhängigkeiten wie für den bisherigen Flyer; gemeinsame Gestaltungselemente stammen aus `../build_flyer.py`, die Standortkarte aus `../../map/build_map.py`. Die bisherige A4-/A5-Erzeugung wird nicht aufgerufen.
 :::
@@ -50,7 +50,7 @@ Dieses Quarto-Notizbuch erzeugt zuerst die Standortkarte aus den lokal gespeiche
 ```{r}
 #| label: concept-flyer-preview
 #| out-width: 100%
-#| fig-alt: "A4-Flyer für das Lichtcafé: Morgens Licht tanken. Der Text erklärt kürzere Tage, weniger Tageslicht und Licht am Morgen als mögliche Starthilfe. Im mobilen Lichtcafé kann man Licht erleben und Forschung zu innerer Uhr, Schlaf und Aufmerksamkeit kennenlernen. Darunter Außen- und Innenansicht, Start am Freitag, 20. November 2026, Europaplatz in Tübingen, eine Standortkarte beim Hauptbahnhof sowie Website und QR-Code."
+#| fig-alt: "A4-Flyer für das Lichtcafé: Morgens Licht tanken. Der Text erklärt kürzere Tage, weniger Tageslicht und Licht am Morgen als mögliche Starthilfe. Im mobilen Lichtcafé kann man Licht erleben und Forschung zu innerer Uhr, Schlaf und Aufmerksamkeit kennenlernen. Darunter Außen- und Innenansicht, offenes Angebot ab Freitag, 20. November 2026, Studienphase ab Januar 2027, Europaplatz in Tübingen, eine Standortkarte beim Hauptbahnhof sowie Website und QR-Code."
 knitr::include_graphics("../../output/preview/lichtcafe-a4-konzept.png")
 ```
 

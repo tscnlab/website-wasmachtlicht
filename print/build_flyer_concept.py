@@ -42,7 +42,7 @@ def build():
     c = canvas.Canvas(str(raw), pagesize=A4, pageCompression=1, invariant=1)
     c.setTitle("Das Lichtcafé - A4-Flyer mit Konzepterklärung")
     c.setAuthor("Was macht Licht? / Max-Planck-Institut für biologische Kybernetik")
-    c.setSubject("Mobiler Forschungstrailer: offenes Angebot ab 20. November 2026")
+    c.setSubject("Mobiler Forschungstrailer: offenes Angebot ab 20. November 2026; Studienphase ab Januar 2027")
     draw_background(c)
     bounds = []
 
@@ -152,7 +152,7 @@ def build():
     extracted = page.extract_text()
     for item in bounds:
         assert item["text"] in extracted, item["text"]
-    for absent in ("Verena", "Müller", "Fotos:", "30. November", "23.–27.", "07:00", "ERÖFFNUNG", "@"):
+    for absent in ("Verena", "Müller", "Fotos:", "30. November", "Studienphase folgt später.", "23.–27.", "07:00", "ERÖFFNUNG", "@"):
         assert absent not in extracted, absent
     assert len(page.images) == 2, "Expected precisely the two chosen photographs"
     links = [ref.get_object()["/A"]["/URI"] for ref in page.get("/Annots", [])]
