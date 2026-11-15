@@ -26,6 +26,8 @@ DATA = json.loads((HERE / "flyer-concept.json").read_text(encoding="utf-8"))
 PDF = ROOT / "output/pdf/lichtcafe-a4-konzept.pdf"
 PREVIEW = ROOT / "output/preview/lichtcafe-a4-konzept.png"
 VALIDATION = ROOT / "output/preview/lichtcafe-a4-konzept-validation.json"
+MAP = ROOT / "output/pdf/lichtcafe-standortkarte.pdf"
+MAP_URL = "https://www.google.com/maps?q=48.5171469,9.0566625"
 TEMP = ROOT / "tmp/pdfs/a4-concept"
 INK, TEAL = HexColor("#103D3A"), HexColor("#007F78")
 ACCENT, CREAM = HexColor("#FFE894"), HexColor("#FFFCF2")
@@ -64,15 +66,19 @@ def build():
     c.setStrokeColor(CREAM)
     c.setLineWidth(.65 * mm)
     c.line(17.4 * mm, HEIGHT - 18.6 * mm, 19.2 * mm, HEIGHT - 16.2 * mm)
-    text(DATA["brand"], 19, 11.2, bold=True, x=24.5)
+    text(DATA["brand"], 19, 12, bold=True, x=24.5)
     rounded(16, 29, 72, 10, 1.8, HexColor("#FFD52D"))
     text(DATA["kicker"], 36.3, 12, bold=True, x=20)
     text(DATA["headline"][0], 56, 54, bold=True)
     text(DATA["headline"][1], 77, 54, bold=True)
 
-    # Five lines connect shorter days, morning light, the visit and the research.
-    for i, line in enumerate(DATA["concept_lines"]):
-        text(line, 87.2 + i * 5.65, 13.3)
+    # Short columns align with the photographs and separate context from research.
+    for block, x in zip(DATA["concept_blocks"], (16, 108)):
+        text(block["title"], 86, 14, bold=True, x=x)
+        assert pdfmetrics.stringWidth(block["title"], "Campaign-Bold", 14) / mm <= 86
+        for i, line in enumerate(block["lines"]):
+            assert pdfmetrics.stringWidth(line, "Campaign", 13) / mm <= 86
+            text(line, 93.4 + i * 5.5, 13, x=x)
 
     for photo, x in zip(DATA["photos"], (16, 108)):
         c.drawImage(str(HERE / "assets/photos" / photo["file"]),
@@ -80,27 +86,26 @@ def build():
                     width=86 * mm, height=86 * 2 / 3 * mm)
         text(photo["caption"], 179, 10, x=x)
 
-    text(DATA["offer"], 190, 15.3, bold=True)
+    text(DATA["offer"], 190, 13)
     text(DATA["start_date"], 199.5, 19, bold=True)
-    text(DATA["place"], 208, 13.3, bold=True)
-    text(DATA["study"], 216, 12, bold=True)
-    text(DATA["website_hint"], 222, 11.5)
-    c.setFillColor(ACCENT)
-    c.circle(174 * mm, HEIGHT - 201 * mm, 13 * mm, fill=1, stroke=0)
-    icon(c, "bulb", 163.5, 201 - 21 * 11.25 / 24, 21)
+    text(DATA["place"], 208, 13)
+    text(DATA["study"], 216, 12)
+    # The exact-location vector map replaces the decorative bulb.
+    location = PdfReader(MAP).pages[0]
+    map_scale = 66 * mm / float(location.mediabox.width)
+    map_height_mm = float(location.mediabox.height) * map_scale / mm
+    assert map_height_mm <= 43.01, "Map must fit beside the visit information"
+    rounded(127.5, 181.5, 67, map_height_mm + 1, 1.5, CREAM)
+    c.linkURL(MAP_URL, (128 * mm, HEIGHT - (182 + map_height_mm) * mm,
+                        194 * mm, HEIGHT - 182 * mm), relative=0)
 
     rounded(8, 230, 194, 43, 4.5, INK)
-    text(DATA["contact"], 235.5, 10, bold=True, colour=ACCENT)
-    rounded(16, 239, 127, 13.5, 1.8, ACCENT)
-    rounded(16, 255.5, 127, 13.5, 1.8, CREAM)
-    icon(c, "link", 20, 242.75, 6)
-    icon(c, "mail", 20, 259.25, 6)
-    text(DATA["website"], 248, 19, bold=True, x=30)
-    text(DATA["email"], 264, 12.8, x=30)
-    c.linkURL(DATA["url"], (16 * mm, HEIGHT - 252.5 * mm,
-                           143 * mm, HEIGHT - 239 * mm), relative=0)
-    c.linkURL("mailto:" + DATA["email"], (16 * mm, HEIGHT - 269 * mm,
-                                        143 * mm, HEIGHT - 255.5 * mm), relative=0)
+    text(DATA["contact"], 235.5, 12, bold=True, colour=ACCENT)
+    rounded(16, 245, 127, 18, 1.8, ACCENT)
+    icon(c, "link", 20, 251, 6)
+    text(DATA["website"], 256.5, 22, bold=True, x=30)
+    c.linkURL(DATA["url"], (16 * mm, HEIGHT - 263 * mm,
+                           143 * mm, HEIGHT - 245 * mm), relative=0)
 
     code = QRCode(version=None, errorCorrectLevel=QRErrorCorrectLevel.M)
     code.addData(DATA["url"])
@@ -118,7 +123,7 @@ def build():
                 c.rect(qx * mm + (col + quiet) * cell,
                        HEIGHT - qtop * mm - (row + quiet + 1) * cell,
                        cell, cell, stroke=0, fill=1)
-    text(DATA["qr_label"], 235.5, 10, bold=True, x=162.5, colour=ACCENT)
+    text(DATA["qr_label"], 235.5, 10, bold=True, x=159, colour=ACCENT)
     c.linkURL(DATA["url"], (qx * mm, HEIGHT - (qtop + extent) * mm,
                            (qx + extent) * mm, HEIGHT - qtop * mm), relative=0)
     c.showPage()
@@ -130,6 +135,8 @@ def build():
     logo_height = float(logo.mediabox.height) * factor
     reader.pages[0].merge_transformed_page(logo, Transformation().scale(factor).translate(
         16 * mm, HEIGHT - 276 * mm - logo_height))
+    reader.pages[0].merge_transformed_page(location, Transformation().scale(map_scale).translate(
+        128 * mm, HEIGHT - (182 + map_height_mm) * mm))
     writer = PdfWriter()
     writer.add_page(reader.pages[0])
     writer.add_metadata({str(k): str(v) for k, v in reader.metadata.items()})
@@ -144,15 +151,21 @@ def build():
     extracted = page.extract_text()
     for item in bounds:
         assert item["text"] in extracted, item["text"]
-    for absent in ("Verena", "Müller", "Fotos:", "30. November", "23.–27.", "07:00", "ERÖFFNUNG"):
+    for absent in ("Verena", "Müller", "Fotos:", "30. November", "23.–27.", "07:00", "ERÖFFNUNG", "@"):
         assert absent not in extracted, absent
     assert len(page.images) == 2, "Expected precisely the two chosen photographs"
     links = [ref.get_object()["/A"]["/URI"] for ref in page.get("/Annots", [])]
-    assert links == [DATA["url"], "mailto:" + DATA["email"], DATA["url"]], links
+    assert links == [MAP_URL, DATA["url"], DATA["url"]], links
     report = {"pages": 1, "page_mm": [210, 297], "photos": DATA["photos"],
-              "photo_credit_present": False, "qr_extent_mm": extent,
+              "photo_credit_present": False, "email_present": False, "qr_extent_mm": extent,
               "qr_url": DATA["url"], "qr_quiet_modules": quiet,
-              "contact_gap_after_hint_baseline_mm": 8, "content": bounds, "links": links}
+              "contact_gap_after_study_baseline_mm": 14,
+              "concept_column_width_mm": 86, "concept_body_size_pt": 13,
+              "concept_leading_pt": round(5.5 * mm, 2),
+              "type_sizes_pt": sorted({item["size_pt"] for item in bounds}),
+              "map": {"pin": [48.5171469, 9.0566625], "url": MAP_URL,
+                      "box_mm": [128, 182, 66, round(map_height_mm, 3)]},
+              "content": bounds, "links": links}
     VALIDATION.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     subprocess.run([find_poppler(), "-r", str(DATA["raster_dpi"]), "-png", "-singlefile",
                     str(PDF), str(PREVIEW.with_suffix(""))], check=True)

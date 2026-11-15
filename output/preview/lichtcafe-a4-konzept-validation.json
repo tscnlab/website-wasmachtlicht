@@ -17,17 +17,43 @@
     }
   ],
   "photo_credit_present": false,
+  "email_present": false,
   "qr_extent_mm": 30,
   "qr_url": "https://wasmachtlicht.de",
   "qr_quiet_modules": 4,
-  "contact_gap_after_hint_baseline_mm": 8,
+  "contact_gap_after_study_baseline_mm": 14,
+  "concept_column_width_mm": 86,
+  "concept_body_size_pt": 13,
+  "concept_leading_pt": 15.59,
+  "type_sizes_pt": [
+    10,
+    12,
+    13,
+    14,
+    19,
+    22,
+    54
+  ],
+  "map": {
+    "pin": [
+      48.5171469,
+      9.0566625
+    ],
+    "url": "https://www.google.com/maps?q=48.5171469,9.0566625",
+    "box_mm": [
+      128,
+      182,
+      66,
+      43.0
+    ]
+  },
   "content": [
     {
       "text": "WAS MACHT LICHT?",
       "x_mm": 24.5,
       "baseline_from_top_mm": 19,
-      "width_mm": 39.723,
-      "size_pt": 11.2
+      "width_mm": 42.561,
+      "size_pt": 12
     },
     {
       "text": "DAS LICHTCAFÉ IN TÜBINGEN",
@@ -51,39 +77,67 @@
       "size_pt": 54
     },
     {
-      "text": "Die Tage werden kürzer, wir bekommen weniger Tageslicht.",
+      "text": "Licht als Starthilfe.",
       "x_mm": 16,
-      "baseline_from_top_mm": 87.2,
-      "width_mm": 124.909,
-      "size_pt": 13.3
+      "baseline_from_top_mm": 86,
+      "width_mm": 44.185,
+      "size_pt": 14
     },
     {
-      "text": "Licht am Morgen kann eine Starthilfe für den Tag sein.",
+      "text": "Die Tage werden kürzer, wir bekommen",
       "x_mm": 16,
-      "baseline_from_top_mm": 92.85000000000001,
-      "width_mm": 112.93,
-      "size_pt": 13.3
+      "baseline_from_top_mm": 93.4,
+      "width_mm": 81.307,
+      "size_pt": 13
     },
     {
-      "text": "Im mobilen Lichtcafé kannst du Licht erleben und unsere Forschung",
+      "text": "weniger Tageslicht. Licht am Morgen",
       "x_mm": 16,
-      "baseline_from_top_mm": 98.5,
-      "width_mm": 141.102,
-      "size_pt": 13.3
+      "baseline_from_top_mm": 98.9,
+      "width_mm": 74.941,
+      "size_pt": 13
     },
     {
-      "text": "kennenlernen. Wir untersuchen, wie morgendliches Licht unsere",
+      "text": "kann eine Starthilfe für den Tag sein.",
       "x_mm": 16,
-      "baseline_from_top_mm": 104.15,
-      "width_mm": 133.533,
-      "size_pt": 13.3
+      "baseline_from_top_mm": 104.4,
+      "width_mm": 74.952,
+      "size_pt": 13
     },
     {
-      "text": "innere Uhr, unseren Schlaf und unsere Aufmerksamkeit beeinflusst.",
-      "x_mm": 16,
-      "baseline_from_top_mm": 109.80000000000001,
-      "width_mm": 140.57,
-      "size_pt": 13.3
+      "text": "Erleben & erforschen.",
+      "x_mm": 108,
+      "baseline_from_top_mm": 86,
+      "width_mm": 51.325,
+      "size_pt": 14
+    },
+    {
+      "text": "Im Lichtcafé kannst du Licht erleben.",
+      "x_mm": 108,
+      "baseline_from_top_mm": 93.4,
+      "width_mm": 74.694,
+      "size_pt": 13
+    },
+    {
+      "text": "Wir erforschen, wie morgendliches Licht",
+      "x_mm": 108,
+      "baseline_from_top_mm": 98.9,
+      "width_mm": 81.307,
+      "size_pt": 13
+    },
+    {
+      "text": "unsere innere Uhr, unseren Schlaf und",
+      "x_mm": 108,
+      "baseline_from_top_mm": 104.4,
+      "width_mm": 78.777,
+      "size_pt": 13
+    },
+    {
+      "text": "unsere Aufmerksamkeit beeinflusst.",
+      "x_mm": 108,
+      "baseline_from_top_mm": 109.9,
+      "width_mm": 72.646,
+      "size_pt": 13
     },
     {
       "text": "Das Lichtcafé von außen",
@@ -103,8 +157,8 @@
       "text": "Offenes Angebot ab",
       "x_mm": 16,
       "baseline_from_top_mm": 190,
-      "width_mm": 51.279,
-      "size_pt": 15.3
+      "width_mm": 40.796,
+      "size_pt": 13
     },
     {
       "text": "Freitag, 20. November 2026",
@@ -117,55 +171,41 @@
       "text": "Europaplatz, Tübingen",
       "x_mm": 16,
       "baseline_from_top_mm": 208,
-      "width_mm": 50.567,
-      "size_pt": 13.3
+      "width_mm": 46.148,
+      "size_pt": 13
     },
     {
       "text": "Studienphase folgt später.",
       "x_mm": 16,
       "baseline_from_top_mm": 216,
-      "width_mm": 53.159,
+      "width_mm": 49.188,
       "size_pt": 12
     },
     {
-      "text": "Alle weiteren Informationen auf unserer Website.",
-      "x_mm": 16,
-      "baseline_from_top_mm": 222,
-      "width_mm": 87.72,
-      "size_pt": 11.5
-    },
-    {
-      "text": "FRAGEN & KONTAKT",
+      "text": "Mehr erfahren & Interesse anmelden",
       "x_mm": 16,
       "baseline_from_top_mm": 235.5,
-      "width_mm": 36.647,
-      "size_pt": 10
+      "width_mm": 73.168,
+      "size_pt": 12
     },
     {
       "text": "wasmachtlicht.de",
       "x_mm": 30,
-      "baseline_from_top_mm": 248,
-      "width_mm": 55.874,
-      "size_pt": 19
+      "baseline_from_top_mm": 256.5,
+      "width_mm": 64.696,
+      "size_pt": 22
     },
     {
-      "text": "info@wasmachtlicht.de",
-      "x_mm": 30,
-      "baseline_from_top_mm": 264,
-      "width_mm": 46.498,
-      "size_pt": 12.8
-    },
-    {
-      "text": "Weitere Infos",
-      "x_mm": 162.5,
+      "text": "QR-Code scannen",
+      "x_mm": 159,
       "baseline_from_top_mm": 235.5,
-      "width_mm": 22.15,
+      "width_mm": 30.579,
       "size_pt": 10
     }
   ],
   "links": [
+    "https://www.google.com/maps?q=48.5171469,9.0566625",
     "https://wasmachtlicht.de",
-    "mailto:info@wasmachtlicht.de",
     "https://wasmachtlicht.de"
   ]
 }

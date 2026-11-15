@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.openstreetmap.org/api/0.6/map?bbox=9.0515,48.5147,9.0623,48.5195",
+  "downloaded_utc": "2026-11-15",
+  "source_bbox": [
+    9.0515,
+    48.5147,
+    9.0623,
+    48.5195
+  ],
+  "display_bbox": [
+    9.0515,
+    48.51473914172644,
+    9.0623,
+    48.5194
+  ],
+  "pin": {
+    "lat": 48.5171469,
+    "lon": 9.0566625
+  },
+  "map_size_mm": [
+    66,
+    43
+  ],
+  "map_area_mm": [
+    66,
+    43
+  ],
+  "north_up": true,
+  "projection": "Local equirectangular, cos(latitude) correction at pin latitude",
+  "license": "Open Database License (ODbL)",
+  "copyright_url": "https://www.openstreetmap.org/copyright",
+  "osm_sha256": "42348c2c0fb8c880dfba1e09bb7cb31ddb54082e78470e9c4bc61159a182e10f",
+  "landmark_ids": {
+    "station_building": "way/24796099",
+    "europaplatz": "way/379070072",
+    "neckar_water": "relation/161200"
+  },
+  "no_route": true,
+  "no_pdf_annotations": true
+}

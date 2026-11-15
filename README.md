@@ -118,3 +118,13 @@ Regenerate it with `python3 scripts/prepare-social-photo.py` (Python 3 + Pillow,
 ## Accessibility and maintenance
 
 Semantic headings and landmarks, keyboard-operable native FAQ disclosures, visible focus indicators, a skip link, explicit page languages, descriptive link labels, responsive layouts, image alternative text and reduced-motion support are included. The page remains readable and navigable without JavaScript. `scripts/check-site.py` verifies local routes, assets and fragment targets after rendering.
+
+## Location map
+
+The supplied Google Maps link `https://maps.app.goo.gl/vzhKzNjRt8oNPiA46` resolves directly to the coordinate pin **48.5171469, 9.0566625**. The pin was verified against both its redirect and the public Google Maps embed; it is not an approximate lookup for the square. The German participation and English contact sections include a responsive, lazy-loaded Google Maps iframe centred on that pin and a directions link to the same destination. The location in the top facts strip links to the map, as does the German location FAQ. No map API key or extra JavaScript is required. The provider is identified in the privacy information.
+
+The current A4 flyer includes a separate 66 × 43 mm vector map in the campaign colours, with the same exact pin, terracotta buildings, the highlighted main railway station and Europaplatz. It has no panel label, river label or separate source strip; a small OpenStreetMap credit sits inside the map. Source data, retrieval provenance and the offline builder are retained in `map/`. Render `map/location.qmd` to reproduce the standalone map and its HTML documentation; outputs include `output/pdf/lichtcafe-standortkarte.pdf`, `output/preview/lichtcafe-standortkarte.png` and `map/output/lichtcafe-standortkarte.svg`.
+
+Running `quarto render` in `print/concept/` rebuilds the map and current A4 flyer together. As requested on 15 November 2026, this flyer uses only the website and QR code for further information and registration; it contains no email address or email link. After rendering, copy `output/pdf/lichtcafe-a4-konzept.pdf` to `assets/lichtcafe-a4-konzept.pdf` and render the root website project to update the download. The earlier A4 and A5 flyers and their source files remain unchanged.
+
+The same notebook records the 15 November typography audit and its implemented changes: two short explanatory columns aligned with the photographs, a clear hierarchy around the opening date, seven deliberate text sizes and one combined call to action. The PDF text and geometry are checked by the builder and the rendered PNG is reviewed as a complete page.

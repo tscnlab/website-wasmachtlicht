@@ -1,0 +1,19 @@
+project:
+  type: default
+  output-dir: output
+  render:
+    - location.qmd
+  post-render:
+    - python3 finalize_html.py
+lang: de
+format:
+  html:
+    theme: none
+    css: location.css
+    embed-resources: true
+    title-block-style: none
+    anchor-sections: false
+execute:
+  freeze: false
+  echo: false
+  warning: false

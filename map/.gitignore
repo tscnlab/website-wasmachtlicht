@@ -1,0 +1,6 @@
+.quarto/
+tmp/
+__pycache__/
+location_files/
+
+/.quarto/
