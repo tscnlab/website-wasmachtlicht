@@ -32,8 +32,21 @@
   "osm_sha256": "42348c2c0fb8c880dfba1e09bb7cb31ddb54082e78470e9c4bc61159a182e10f",
   "landmark_ids": {
     "station_building": "way/24796099",
-    "europaplatz": "way/379070072",
+    "station_forecourt_bus_area": "way/1159357124",
     "neckar_water": "relation/161200"
+  },
+  "label_anchors": {
+    "Europaplatz": {
+      "lon": 9.0557,
+      "lat": 48.51645,
+      "kind": "area_label",
+      "context": "Bahnhofsvorplatz / ZOB",
+      "within_osm_area": "way/1159357124",
+      "verification_sources": [
+        "https://www.tuebingen.de/gemeinderat/getfile.php?id=99136&type=do",
+        "https://www.tuebingen.de/europaplatz/"
+      ]
+    }
   },
   "no_route": true,
   "no_pdf_annotations": true

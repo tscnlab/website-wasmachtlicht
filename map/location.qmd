@@ -16,7 +16,7 @@ status <- attr(result, "status")
 if (!is.null(status) && status != 0) stop(paste(result, collapse = "\n"))
 ```
 
-![](../output/preview/lichtcafe-standortkarte.png){fig-alt="Standortkarte: Das Lichtcafé ist nordöstlich des Tübinger Hauptbahnhofs, westlich des dortigen Europaplatz-Straßenabschnitts markiert. Der Neckar liegt nördlich." width=660}
+![](../output/preview/lichtcafe-standortkarte.png){fig-alt="Standortkarte: Das Lichtcafé ist nordöstlich des Tübinger Hauptbahnhofs markiert. Die Beschriftung Europaplatz steht im Bahnhofsvorplatz- und ZOB-Bereich nördlich des Bahnhofsgebäudes." width=660}
 
 ## Dokumentation
 
@@ -27,6 +27,8 @@ Standortkarte für den Flyer · **66 × 43 mm** · Norden oben. Gebäude sind in
 ## Datengrundlage und Gestaltung
 
 Die Straßen, Gebäude, Gleise und Wasserflächen stammen aus einem einmalig abgerufenen OpenStreetMap-Ausschnitt. Der Hauptbahnhof wird anhand seines tatsächlichen Gebäudeumrisses hervorgehoben. Die Darstellung ist vereinfacht: ausgewählte Straßen sowie die Ortsbeschriftungen Lichtcafé, Hauptbahnhof und Europaplatz, ohne erfundene Straßen oder Gehroute.
+
+Die Beschriftung **Europaplatz** ist als Bereichsbezeichnung über dem Bahnhofsvorplatz/ZOB gesetzt, bei 9.0557° E, 48.51645° N innerhalb der gespeicherten ZOB-Fläche (OSM-Weg 1159357124). Ihre frühere Position lag zu weit östlich. Die Lage wurde mit dem [amtlichen Lageplan der Stadt](https://www.tuebingen.de/gemeinderat/getfile.php?id=99136&type=do) und der [Beschreibung des Europaplatzes einschließlich ZOB](https://www.tuebingen.de/europaplatz/) abgeglichen. Die namensgleiche Straße östlich des ZOB ist kein Anker für diese Flächenbeschriftung.
 
 Die Karte verwendet eine lokale equirektangulare Projektion mit Breitenkorrektur bei 48.5171469° N. Der dargestellte Ausschnitt reicht von 9.0515° bis 9.0623° E und 48.5147391417° bis 48.5194° N. Der Ausschnitt wurde innerhalb der gespeicherten OSM-Daten vertikal erweitert, um die Fläche ohne Fußleiste im gleichen geografischen Maßstab zu nutzen. Der vorgegebene Standort liegt ungefähr 126 m nördlich und 84 m östlich des Bahnhofsgebäude-Mittelpunkts; diese Werte sind geometrische Abstände, keine Wegbeschreibung.
 

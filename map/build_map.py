@@ -13,6 +13,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
 W,H=66,43
 PIN=(9.0566625,48.5171469)
+EUROPAPLATZ_LABEL=(9.0557,48.51645)
 XMIN,XMAX,YMAX=9.0515,9.0623,48.5194
 YMIN=YMAX-(XMAX-XMIN)*math.cos(math.radians(PIN[1]))*H/W
 INK='#103D3A'; CREAM='#FFF5D4'; WATER='#A8CECA'; TEAL='#007F78'; BUILDING='#C99D92'
@@ -84,7 +85,9 @@ def main():
     # Labels are annotations, anchored to verified OSM features.
     _,station_y=project((9.05552509,48.51601074))
     text('Hauptbahnhof',25.1,station_y+4.5,8,bold=True,anchor='middle',back=True)
-    text('Europaplatz',43.7,27.0,7.4,anchor='middle',back=True)
+    # Area label over the station forecourt/ZOB, checked against the city plan.
+    europa_x,europa_y=project(EUROPAPLATZ_LABEL)
+    text('Europaplatz',europa_x,europa_y+.9,7.4,anchor='middle',back=True)
     px,py=project(PIN)
     # The pointer tip is exactly at the supplied coordinate.
     poly([(px-1.5,py-2.7),(px+1.5,py-2.7),(px,py)],fill='#F48432',stroke=INK,width=.2)
@@ -104,7 +107,12 @@ def main():
                 'projection':'Local equirectangular, cos(latitude) correction at pin latitude',
                 'license':'Open Database License (ODbL)','copyright_url':'https://www.openstreetmap.org/copyright',
                 'osm_sha256':hashlib.sha256((HERE/'data/location.osm').read_bytes()).hexdigest(),
-                'landmark_ids':{'station_building':'way/24796099','europaplatz':'way/379070072','neckar_water':'relation/161200'},
+                'landmark_ids':{'station_building':'way/24796099','station_forecourt_bus_area':'way/1159357124','neckar_water':'relation/161200'},
+                'label_anchors':{'Europaplatz':{'lon':EUROPAPLATZ_LABEL[0],'lat':EUROPAPLATZ_LABEL[1],
+                    'kind':'area_label','context':'Bahnhofsvorplatz / ZOB',
+                    'within_osm_area':'way/1159357124',
+                    'verification_sources':['https://www.tuebingen.de/gemeinderat/getfile.php?id=99136&type=do',
+                                            'https://www.tuebingen.de/europaplatz/']}},
                 'no_route':True,'no_pdf_annotations':True}
     (HERE/'data/provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'pdf':str(PDF),'svg':str(SVG),'png':str(PNG),'display_bbox':provenance['display_bbox']}))
