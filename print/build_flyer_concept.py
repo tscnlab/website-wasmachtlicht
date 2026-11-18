@@ -42,7 +42,7 @@ def build():
     c = canvas.Canvas(str(raw), pagesize=A4, pageCompression=1, invariant=1)
     c.setTitle("Das Lichtcafé - A4-Flyer mit Konzepterklärung")
     c.setAuthor("Was macht Licht? / Max-Planck-Institut für biologische Kybernetik")
-    c.setSubject("Mobiler Forschungstrailer: offenes Angebot ab 20. November 2026; Studienphase ab Januar 2027")
+    c.setSubject("Mobiler Forschungstrailer: offenes Angebot vom 20. November bis 18. Dezember 2026; Studienphase ab Januar 2027")
     draw_background(c)
     bounds = []
 
@@ -88,10 +88,12 @@ def build():
 
     # One white panel groups the visit details with the full-size location map.
     rounded(8, 181.5, 194, 46.5, 4.5, white)
-    text(DATA["offer"], 190, 13)
-    text(DATA["start_date"], 199.5, 19, bold=True)
-    text(DATA["place"], 208, 13)
-    text(DATA["study"], 216, 12)
+    text(DATA["offer"], 188.5, 13)
+    for i, line in enumerate(DATA["date_lines"]):
+        assert pdfmetrics.stringWidth(line, "Campaign-Bold", 19) / mm <= 104
+        text(line, 197 + i * 8.3, 19, bold=True)
+    text(DATA["place"], 213.5, 13)
+    text(DATA["study"], 221.5, 12)
     # The exact-location vector map replaces the decorative bulb.
     location = PdfReader(MAP).pages[0]
     map_scale = 66 * mm / float(location.mediabox.width)
@@ -160,7 +162,7 @@ def build():
     report = {"pages": 1, "page_mm": [210, 297], "photos": DATA["photos"],
               "photo_credit_present": False, "email_present": False, "qr_extent_mm": extent,
               "qr_url": DATA["url"], "qr_quiet_modules": quiet,
-              "contact_gap_after_study_baseline_mm": 14,
+              "contact_gap_after_study_baseline_mm": 8.5,
               "concept_column_width_mm": 86, "concept_body_size_pt": 13,
               "concept_leading_pt": round(5.5 * mm, 2),
               "type_sizes_pt": sorted({item["size_pt"] for item in bounds}),

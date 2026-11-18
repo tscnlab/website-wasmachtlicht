@@ -1,5 +1,5 @@
 {
-  "revision": "A4 concept revision, 15 November 2026. Study phase from January 2027. Location map, website and QR code; no email address. Previous flyers remain unchanged.",
+  "revision": "A4 concept revision, 18 November 2026. Public drop-in from 20 November through 18 December 2026; study phase from January 2027. Previous flyers remain unchanged.",
   "url": "https://wasmachtlicht.de",
   "brand": "WAS MACHT LICHT?",
   "kicker": "DAS LICHTCAFÉ IN TÜBINGEN",
@@ -24,7 +24,7 @@
     }
   ],
   "offer": "Offenes Angebot ab",
-  "start_date": "Freitag, 20. November 2026",
+  "date_lines": ["Freitag, 20. November", "bis 18. Dezember 2026"],
   "place": "Europaplatz, Tübingen",
   "study": "Studienphase ab Januar 2027.",
   "photos": [
