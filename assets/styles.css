@@ -236,3 +236,11 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline-color:var(--c
 .visit-map iframe{display:block;width:100%;height:340px;border:0}
 .facts-bar a{text-decoration:underline;text-underline-offset:4px;text-decoration-color:#a88e73}
 @media(max-width:760px){.visit-location{grid-template-columns:1fr;gap:20px}.visit-map iframe{height:320px}}
+
+/* Past events remain readable and distinguishable without relying on colour. */
+.event--past{--event-accent:#595959;--event-line:#c9c9c9;--event-tint:#e9e9e9;--event-date-bg:#ededed;color:#595959;border-top-color:#c9c9c9}
+.event--past .event-date,.event--past .event-copy h3,.event--past .event-subtitle,.event--past .event-speaker,.event--past .event-venue a,.event--past .event-flyer{color:#595959}
+.event--past .event-flyer img{filter:grayscale(1)}
+.event--past .event-mode{font-size:14px;letter-spacing:.02em}
+.event-past-note{margin-top:24px;font-size:16px;line-height:1.6;font-weight:500}
+.press-section{background:var(--soft)}
